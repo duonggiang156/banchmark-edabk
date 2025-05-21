@@ -29,8 +29,6 @@ The benchmark is divided into 4 levels from basic to advanced:
 
 ## 2. Dataset Scale
 
-### Data quantity and classification
-
 The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
 | Level | Name | Quantity | Description |
@@ -39,33 +37,11 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 | 2 | Basic Calculations | 4090 | Mainly number system conversions, binary arithmetic, signed numbers, complements, ... |
 | 3 | Function Minimization / Karnaugh Map | 7200 | Logic function minimization problems with 3, 4, 5, 6-variable K-maps |
 
-#### Detailed statistics:
-- **Level 1:** 436 theory questions (crawled and manually verified)
-- **Level 2:** 4090 problems, including:
-  - 3072 number system conversions (75%)
-  - 100 binary calculator (2%)
-  - 312 sign/magnitude numbers (8%)
-  - 297 one's-complement (7%)
-  - 309 two's-complement (8%)
-- **Level 3:** 7200 K-map problems, including:
-  - 3500 3-variable K-map (49%)
-  - 3500 4-variable K-map (49%)
-  - 100 5-variable K-map (1%)
-  - 100 6-variable K-map (1%)
-
-#### Data construction methods
-- Level 1: Data crawling + manual verification
-- Level 2: Tool + real exercises
-- Level 3: Automatic tool generation
-
-
 ### Dataset visualization
 
 ![*Total data by group*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
 
-
 ![*Distribution of problem types in Level 2*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
-
 
 ![*Distribution of problem types in Level 3*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
 
