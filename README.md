@@ -85,14 +85,15 @@ Dataset được chia thành 3 nhóm chính tương ứng với 3 level đầu t
 
 ### Hình ảnh minh họa dataset
 
-![*Biểu đồ tổng số lượng dữ liệu từng nhóm*](./images/total_data.jpg](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
+![](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
+*Biểu đồ tổng số lượng dữ liệu từng nhóm*
 
 
-![*Phân bố các dạng bài toán ở Level 2*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
+![](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
+*Phân bố các dạng bài toán ở Level 2*
 
-
-![*Phân bố các dạng bài toán ở Level 3*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
-
+![](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
+*Phân bố các dạng bài toán ở Level 3*
 
 ## 3. Hướng dẫn sử dụng
 
