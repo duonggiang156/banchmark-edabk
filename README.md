@@ -7,26 +7,7 @@ A benchmark dataset for digital circuit design (Digital IC Design)
 The benchmark is divided into 4 levels from basic to advanced:
 
 ### Level 1: Basic Theory
-- Definitions and fundamental concepts
-  + Number systems (binary, decimal, hexadecimal)
-  + Boolean algebra and logic operations
-  + Basic logic gates (AND, OR, NOT, NAND, NOR, XOR)
-  + Truth tables and logic expressions
-  + Minterm and Maxterm
-  + Karnaugh Map (K-map)
-  + Combinational and sequential circuits
-  + Flip-flops and memory types
-  + Encoding and decoding
-  + Multiplexer and Demultiplexer
-  + Adders and subtractors
-  + Comparators
-  + Counters and frequency dividers
-  + Circuit optimization methods
-  + Design and verification standards
-  + IC fabrication technologies (CMOS, TTL, ECL)
-  + Key technical parameters (speed, power, noise)
-  + Testing and debugging methods
-  + Design and simulation tools
+- Definitions and fundamental concepts (number systems, Boolean algebra, logic gates, truth tables, K-maps, ...)
 - Steps to design a digital circuit
 - Circuit optimization process
 - Circuit verification methods
@@ -77,10 +58,6 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 - Level 2: Tool + real exercises
 - Level 3: Automatic tool generation
 
-#### Token statistics
-- Level 1: 21,695
-- Level 2: 1,204,064
-- Level 3: 3,192,868
 
 ### Dataset visualization
 
