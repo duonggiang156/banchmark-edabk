@@ -1,138 +1,180 @@
 # edabk-ic-design-dataset
 
-Dataset benchmark cho thiết kế mạch số (Digital IC Design)
+A benchmark dataset for digital circuit design (Digital IC Design)
 
-## 1. Tổng quan về Benchmark
+## 1. Overview of the Benchmark
 
-Benchmark được chia thành 4 cấp độ từ cơ bản đến nâng cao:
+The benchmark is divided into 4 levels from basic to advanced:
 
-### Level 1: Lý thuyết cơ bản
-- Định nghĩa và khái niệm cơ bản
-  + Hệ thống số (nhị phân, thập phân, thập lục phân)
-  + Đại số Boole và các phép toán logic
-  + Cổng logic cơ bản (AND, OR, NOT, NAND, NOR, XOR)
-  + Bảng chân trị và biểu thức logic
-  + Minterm và Maxterm
-  + Bản đồ Karnaugh (K-map)
-  + Mạch tổ hợp và mạch tuần tự
-  + Flip-flop và các loại bộ nhớ
-  + Mã hóa và giải mã
-  + Multiplexer và Demultiplexer
-  + Bộ cộng và bộ trừ
-  + Bộ so sánh
-  + Bộ đếm và bộ chia tần
-  + Các phương pháp tối ưu hóa mạch
-  + Các tiêu chuẩn thiết kế và verify mạch
-  + Các công nghệ chế tạo IC (CMOS, TTL, ECL)
-  + Các thông số kỹ thuật quan trọng (tốc độ, công suất, nhiễu)
-  + Các phương pháp test và debug mạch
-  + Các công cụ thiết kế và mô phỏng
-- Các bước thiết kế mạch số
-- Quy trình tối ưu mạch
-- Phương pháp verify mạch
+### Level 1: Basic Theory
+- Definitions and fundamental concepts
+  + Number systems (binary, decimal, hexadecimal)
+  + Boolean algebra and logic operations
+  + Basic logic gates (AND, OR, NOT, NAND, NOR, XOR)
+  + Truth tables and logic expressions
+  + Minterm and Maxterm
+  + Karnaugh Map (K-map)
+  + Combinational and sequential circuits
+  + Flip-flops and memory types
+  + Encoding and decoding
+  + Multiplexer and Demultiplexer
+  + Adders and subtractors
+  + Comparators
+  + Counters and frequency dividers
+  + Circuit optimization methods
+  + Design and verification standards
+  + IC fabrication technologies (CMOS, TTL, ECL)
+  + Key technical parameters (speed, power, noise)
+  + Testing and debugging methods
+  + Design and simulation tools
+- Steps to design a digital circuit
+- Circuit optimization process
+- Circuit verification methods
 
-### Level 2: Tính toán cơ bản
-- Chuyển đổi số nhị phân sang thập phân
-- Phép toán với số nhị phân
-- Các phép tính logic cơ bản
+### Level 2: Basic Calculations
+- Binary to decimal conversion
+- Binary arithmetic
+- Basic logic calculations
 
-### Level 3: Tối thiểu hóa và chứng minh
-- Tối thiểu hóa hàm logic
-- Chứng minh công thức
-- Áp dụng lý thuyết vào bài toán thực tế
+### Level 3: Minimization and Proof
+- Logic function minimization
+- Formula proof
+- Applying theory to practical problems
 
-### Level 4: Triển khai mạch
-- Chuyển đổi công thức thành mạch
-- Thiết kế mạch từ đặc tả
-- Tối ưu hóa cấu trúc mạch
+### Level 4: Circuit Implementation
+- Converting formulas to circuits
+- Designing circuits from specifications
+- Circuit structure optimization
 
+## 2. Dataset Scale
 
-## 2. Quy mô Dataset
+### Data quantity and classification
 
-### Số lượng và phân loại dữ liệu
+The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
-Dataset được chia thành 3 nhóm chính tương ứng với 3 level đầu tiên:
+| Level | Name | Quantity | Description |
+|-------|------|----------|-------------|
+| 1 | Basic Theory | 436 | Comprehensive theory questions covering all key topics in digital electronics |
+| 2 | Basic Calculations | 4090 | Mainly number system conversions, binary arithmetic, signed numbers, complements, ... |
+| 3 | Function Minimization / Karnaugh Map | 7200 | Logic function minimization problems with 3, 4, 5, 6-variable K-maps |
 
-| Level | Tên | Số lượng | Mô tả |
-|-------|-----|----------|-------|
-| 1 | Lý thuyết cơ bản | 436 | Các câu hỏi lý thuyết tổng hợp, bao phủ toàn bộ các chủ đề trọng tâm của điện tử số |
-| 2 | Tính toán cơ bản | 4090 | Chủ yếu là các bài toán chuyển đổi hệ số, phép toán nhị phân, số bù, số dấu, ... |
-| 3 | Tối thiểu hóa hàm/Karnaugh Map | 7200 | Các bài toán tối thiểu hóa hàm logic với K-map 3, 4, 5, 6 biến |
+#### Detailed statistics:
+- **Level 1:** 436 theory questions (crawled and manually verified)
+- **Level 2:** 4090 problems, including:
+  - 3072 number system conversions (75%)
+  - 100 binary calculator (2%)
+  - 312 sign/magnitude numbers (8%)
+  - 297 one's-complement (7%)
+  - 309 two's-complement (8%)
+- **Level 3:** 7200 K-map problems, including:
+  - 3500 3-variable K-map (49%)
+  - 3500 4-variable K-map (49%)
+  - 100 5-variable K-map (1%)
+  - 100 6-variable K-map (1%)
 
-#### Thống kê chi tiết:
-- **Level 1:** 436 câu hỏi lý thuyết (được crawl và kiểm tra thủ công)
-- **Level 2:** 4090 bài toán, trong đó:
-  - 3072 bài chuyển đổi hệ số (75%)
-  - 100 bài toán nhị phân (2%)
-  - 312 bài số dấu (8%)
-  - 297 bài số bù 1 (7%)
-  - 309 bài số bù 2 (8%)
-- **Level 3:** 7200 bài toán K-map, gồm:
-  - 3500 K-map 3 biến (49%)
-  - 3500 K-map 4 biến (49%)
-  - 100 K-map 5 biến (1%)
-  - 100 K-map 6 biến (1%)
+#### Data construction methods
+- Level 1: Data crawling + manual verification
+- Level 2: Tool + real exercises
+- Level 3: Automatic tool generation
 
-#### Phương pháp xây dựng dữ liệu
-- Level 1: Crawl dữ liệu + kiểm tra thủ công
-- Level 2: Tool + bài tập thực tế
-- Level 3: Tool sinh tự động
-
-#### Thống kê token
+#### Token statistics
 - Level 1: 21,695
 - Level 2: 1,204,064
 - Level 3: 3,192,868
 
-### Hình ảnh minh họa dataset
+### Dataset visualization
 
-![*Biểu đồ tổng số lượng dữ liệu từng nhóm*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
-
-
-![*Phân bố các dạng bài toán ở Level 2*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
+![*Total data by group*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
 
 
-![*Phân bố các dạng bài toán ở Level 3*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
+![*Distribution of problem types in Level 2*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
 
 
+![*Distribution of problem types in Level 3*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
 
-## 3. Hướng dẫn sử dụng
 
-### Môi trường cài đặt
+## 3. Usage Guide
+
+### Environment
 - Python >= 3.x
-- Các thư viện cần thiết: `pandas`, `numpy`, `...`
+- Required libraries: `pandas`, `numpy`, `...`
 
-### Quy trình sử dụng benchmark
+### Benchmark usage workflow
 
 ```
-Bước 1: Clone repository
+Step 1: Clone repository
     |
-Bước 2: Cài đặt dependencies
+Step 2: Install dependencies
     |
-Bước 3: Chạy benchmark với dataset tương ứng
+Step 3: Run benchmark with the corresponding dataset
     |
-Bước 4: Đánh giá kết quả theo metrics
+Step 4: Evaluate results using metrics
 ```
 
-### Các bước chi tiết
+### Detailed steps
 
 1. **Clone repository**
    ```bash
    git clone <link-repo>
-   cd <tên-thư-mục-repo>
+   cd <repo-folder-name>
    ```
 
-2. **Cài đặt dependencies**
+2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Chạy benchmark**
-   - Thực hiện theo hướng dẫn trong thư mục `src/` hoặc theo từng notebook/script cụ thể.
+3. **Run benchmark**
+   - Follow the instructions in the `src/` directory or use the provided notebook/scripts.
 
-4. **Đánh giá kết quả**
-   - Sử dụng các metrics:
-     - Độ chính xác (Accuracy)
-     - Thời gian xử lý
-     - Độ phức tạp của giải pháp
+4. **Evaluate results**
+   - Use the following metrics:
+     - Accuracy
+     - Processing time
+     - Solution complexity
+
+## 🎯 Benchmark Goals
+
+- Provide a standardized, easy-to-use dataset for digital circuit design problems.
+- Support evaluation and comparison of AI/LLM models in digital electronics.
+- Enable expansion, contribution, and reuse of data within the research community.
+
+## 🚀 Quick Start
+
+1. Clone repository:
+   ```bash
+   git clone <link-repo>
+   cd <repo-folder-name>
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run a sample script:
+   ```bash
+   python src/run_benchmark.py --dataset 1cau_convert_so.xlsx
+   ```
+
+## 🤝 Contribution & Development
+
+- All contributions regarding data, code, or ideas are welcome!
+- Please create a pull request or issue for discussion.
+- To develop more benchmarks or expand the dataset, refer to the `src/` directory and contact the development team.
+
+## 📄 Citation
+
+If you use this dataset for research, please cite as follows:
+
+```
+@misc{edabk-ic-design-dataset,
+  title={edabk-ic-design-dataset: Benchmark for digital circuit design},
+  author={EDABK Development Team},
+  year={2024},
+  url={https://github.com/<your-repo>}
+}
+```
+
+
+
 
 
