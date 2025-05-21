@@ -85,33 +85,66 @@ Dataset được chia thành 3 nhóm chính tương ứng với 3 level đầu t
 
 ### Hình ảnh minh họa dataset
 
-![](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
-*Biểu đồ tổng số lượng dữ liệu từng nhóm*
+<div style="text-align: center;">
+  <figure style="margin: 20px 0;">
+    <img src="https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg" alt="Biểu đồ tổng số lượng dữ liệu" width="300"/>
+    <figcaption>Biểu đồ tổng số lượng dữ liệu từng nhóm</figcaption>
+  </figure>
+</div>
 
+<div style="text-align: center;">
+  <figure style="margin: 20px 0;">
+    <img src="https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg" alt="Biểu đồ tổng số lượng dữ liệu" width="300"/>
+    <figcaption>Phân bố các dạng bài toán ở Level 2</figcaption>
+  </figure>
+</div>
 
-![](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
-*Phân bố các dạng bài toán ở Level 2*
+<div style="text-align: center;">
+  <figure style="margin: 20px 0;">
+    <img src="https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg" alt="Biểu đồ tổng số lượng dữ liệu" width="300"/>
+    <figcaption>Phân bố các dạng bài toán ở Level 3</figcaption>
+  </figure>
+</div>
 
-![](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
-*Phân bố các dạng bài toán ở Level 3*
 
 ## 3. Hướng dẫn sử dụng
 
-### Môi trường
+### Môi trường cài đặt
 - Python 3.x
-- Các thư viện cần thiết: pandas, numpy
+- Các thư viện cần thiết: `pandas`, `numpy`
 
-### Metrics đánh giá
-- Độ chính xác (Accuracy)
-- Thời gian xử lý
-- Độ phức tạp của giải pháp
+### Quy trình sử dụng benchmark
 
-### Cách sử dụng
-1. Clone repository
-2. Cài đặt dependencies
-3. Chạy benchmark với dataset tương ứng
+```
+Bước 1: Clone repository
+    |
+Bước 2: Cài đặt dependencies
+    |
+Bước 3: Chạy benchmark với dataset tương ứng
+    |
+Bước 4: Đánh giá kết quả theo metrics
+```
 
-## License
-MIT License
+### Các bước chi tiết
+
+1. **Clone repository**
+   ```bash
+   git clone <link-repo>
+   cd <tên-thư-mục-repo>
+   ```
+
+2. **Cài đặt dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Chạy benchmark**
+   - Thực hiện theo hướng dẫn trong thư mục `src/` hoặc theo từng notebook/script cụ thể.
+
+4. **Đánh giá kết quả**
+   - Sử dụng các metrics:
+     - Độ chính xác (Accuracy)
+     - Thời gian xử lý
+     - Độ phức tạp của giải pháp
 
 
