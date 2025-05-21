@@ -85,33 +85,21 @@ Dataset được chia thành 3 nhóm chính tương ứng với 3 level đầu t
 
 ### Hình ảnh minh họa dataset
 
-<div style="text-align: center;">
-  <figure style="margin: 20px 0;">
-    <img src="https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg" alt="Biểu đồ tổng số lượng dữ liệu" width="300"/>
-    <figcaption>Biểu đồ tổng số lượng dữ liệu từng nhóm</figcaption>
-  </figure>
-</div>
+![*Biểu đồ tổng số lượng dữ liệu từng nhóm*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
 
-<div style="text-align: center;">
-  <figure style="margin: 20px 0;">
-    <img src="https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg" alt="Biểu đồ tổng số lượng dữ liệu" width="300"/>
-    <figcaption>Phân bố các dạng bài toán ở Level 2</figcaption>
-  </figure>
-</div>
 
-<div style="text-align: center;">
-  <figure style="margin: 20px 0;">
-    <img src="https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg" alt="Biểu đồ tổng số lượng dữ liệu" width="300"/>
-    <figcaption>Phân bố các dạng bài toán ở Level 3</figcaption>
-  </figure>
-</div>
+![*Phân bố các dạng bài toán ở Level 2*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
+
+
+![*Phân bố các dạng bài toán ở Level 3*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
+
 
 
 ## 3. Hướng dẫn sử dụng
 
 ### Môi trường cài đặt
-- Python 3.x
-- Các thư viện cần thiết: `pandas`, `numpy`
+- Python >= 3.x
+- Các thư viện cần thiết: `pandas`, `numpy`, `...`
 
 ### Quy trình sử dụng benchmark
 
