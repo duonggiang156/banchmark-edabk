@@ -2,164 +2,142 @@
 
 A benchmark dataset for digital circuit design (Digital IC Design)
 
+## 🔍 Purpose of the Dataset
+
+This dataset was created to address critical gaps in the field of digital circuit design:
+
+- Currently, there is no specific benchmark for digital electronics design problems, especially for AI/LLM models.
+- There is a lack of standardized datasets for Karnaugh maps and logic function minimization techniques.
+- Standardized datasets for number system conversions and calculations in different numerical systems are missing.
+- There is a need for a platform to evaluate AI model performance in solving digital circuit design problems.
+
+This dataset aims to fill these gaps by providing a comprehensive and diverse collection of data for both academic research and industrial applications.
+
 ## 1. Overview of the Benchmark
 
-<table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
-    <thead>
-        <tr style="background-color: #009879; color: #ffffff; text-align: left;">
-            <th style="padding: 12px 15px;">Level</th>
-            <th style="padding: 12px 15px;">Description</th>
-            <th style="padding: 12px 15px;">Topics</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 1: Basic Theory</strong></td>
-            <td style="padding: 12px 15px;">Foundational knowledge and concepts</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Definitions and fundamental concepts</li>
-                    <li>Steps to design a digital circuit</li>
-                    <li>Circuit optimization process</li>
-                    <li>Circuit verification methods</li>
-                </ul>
-            </td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 2: Basic Calculations</strong></td>
-            <td style="padding: 12px 15px;">Essential numerical operations</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Binary to decimal conversion</li>
-                    <li>Binary arithmetic</li>
-                    <li>Basic logic calculations</li>
-                </ul>
-            </td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 3: Minimization and Proof</strong></td>
-            <td style="padding: 12px 15px;">Advanced logic operations</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Logic function minimization</li>
-                    <li>Formula proof</li>
-                    <li>Applying theory to practical problems</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 4: Circuit Implementation</strong></td>
-            <td style="padding: 12px 15px;">Practical circuit design</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Converting formulas to circuits</li>
-                    <li>Designing circuits from specifications</li>
-                    <li>Circuit structure optimization</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+The benchmark is designed with progressive levels from basic to advanced, allowing users to approach concepts gradually and comprehensively.
+
+| Level | Module Name | Key Content | Skills Developed |
+|--------|------------|----------------|-------------------|
+| **Level 1** | Basic Theory | • Fundamental concepts (number systems, Boolean algebra)<br>• Logic gates, truth tables, K-maps<br>• Digital circuit design process<br>• Circuit optimization methods | Understanding and applying basic concepts |
+| **Level 2** | Basic Calculations | • Conversions between number systems (binary, decimal, etc.)<br>• Binary arithmetic<br>• Basic logic calculations | Performing calculations and conversions |
+| **Level 3** | Minimization and Proof | • Logic function minimization<br>• Formula proof<br>• Applying theory to practical problems | Analyzing and optimizing logic circuits |
+| **Level 4** | Circuit Implementation | • Converting formulas to circuits<br>• Designing circuits from specifications<br>• Optimizing circuit structures | Designing and implementing complete digital circuits |
 
 ## 2. Dataset Scale
 
-### Số lượng và phân loại dữ liệu
+The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
-Dataset được chia thành 3 nhóm chính tương ứng với 3 level đầu tiên:
-
-<table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
-    <thead>
-        <tr style="background-color: #009879; color: #ffffff; text-align: left;">
-            <th style="padding: 12px 15px;">Level</th>
-            <th style="padding: 12px 15px;">Tên</th>
-            <th style="padding: 12px 15px;">Số lượng</th>
-            <th style="padding: 12px 15px;">Mô tả</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;">1</td>
-            <td style="padding: 12px 15px;">Lý thuyết cơ bản</td>
-            <td style="padding: 12px 15px;">436</td>
-            <td style="padding: 12px 15px;">Các câu hỏi lý thuyết tổng hợp, bao phủ toàn bộ các chủ đề trọng tâm của điện tử số</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;">2</td>
-            <td style="padding: 12px 15px;">Tính toán cơ bản</td>
-            <td style="padding: 12px 15px;">4090</td>
-            <td style="padding: 12px 15px;">Chủ yếu là các bài toán chuyển đổi hệ số, phép toán nhị phân, số bù, số dấu, ...</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px 15px; background-color: #f3f3f3;">3</td>
-            <td style="padding: 12px 15px;">Tối thiểu hóa hàm/Karnaugh Map</td>
-            <td style="padding: 12px 15px;">7200</td>
-            <td style="padding: 12px 15px;">Các bài toán tối thiểu hóa hàm logic với K-map 3, 4, 5, 6 biến</td>
-        </tr>
-    </tbody>
-</table>
-
-### Thống kê chi tiết
-
-#### Level 1: Lý thuyết cơ bản
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 15px 0;">
-    <h4 style="color: #009879; margin-top: 0;">Tổng quan</h4>
-    <ul style="list-style-type: none; padding-left: 0;">
-        <li style="margin: 10px 0;">📚 <strong>436</strong> câu hỏi lý thuyết</li>
-        <li style="margin: 10px 0;">✓ Được crawl và kiểm tra thủ công</li>
-    </ul>
-</div>
-
-#### Level 2: Tính toán cơ bản
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 15px 0;">
-    <h4 style="color: #009879; margin-top: 0;">Phân bố bài tập (4090 bài)</h4>
-    <table style="width:100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="border-bottom: 1px solid #ddd;">
-            <td style="padding: 8px; width: 60%;">Chuyển đổi hệ số</td>
-            <td style="padding: 8px; text-align: right;"><strong>3072</strong> bài (75%)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #ddd;">
-            <td style="padding: 8px;">Bài toán nhị phân</td>
-            <td style="padding: 8px; text-align: right;"><strong>100</strong> bài (2%)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #ddd;">
-            <td style="padding: 8px;">Số dấu</td>
-            <td style="padding: 8px; text-align: right;"><strong>312</strong> bài (8%)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #ddd;">
-            <td style="padding: 8px;">Số bù 1</td>
-            <td style="padding: 8px; text-align: right;"><strong>297</strong> bài (7%)</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px;">Số bù 2</td>
-            <td style="padding: 8px; text-align: right;"><strong>309</strong> bài (8%)</td>
-        </tr>
-    </table>
-</div>
-
-#### Level 3: K-map
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 15px 0;">
-    <h4 style="color: #009879; margin-top: 0;">Phân bố K-map (7200 bài)</h4>
-    <table style="width:100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="border-bottom: 1px solid #ddd;">
-            <td style="padding: 8px; width: 60%;">K-map 3 biến</td>
-            <td style="padding: 8px; text-align: right;"><strong>3500</strong> bài (49%)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #ddd;">
-            <td style="padding: 8px;">K-map 4 biến</td>
-            <td style="padding: 8px; text-align: right;"><strong>3500</strong> bài (49%)</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #ddd;">
-            <td style="padding: 8px;">K-map 5 biến</td>
-            <td style="padding: 8px; text-align: right;"><strong>100</strong> bài (1%)</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px;">K-map 6 biến</td>
-            <td style="padding: 8px; text-align: right;"><strong>100</strong> bài (1%)</td>
-        </tr>
-    </table>
-</div>
+| Level | Name | Quantity | Description |
+|-------|------|----------|-------------|
+| 1 | Basic Theory | 436 | Comprehensive theory questions covering all key topics in digital electronics |
+| 2 | Basic Calculations | 4090 | Mainly number system conversions, binary arithmetic, signed numbers, complements, ... |
+| 3 | Function Minimization / Karnaugh Map | 7200 | Logic function minimization problems with 3, 4, 5, 6-variable K-maps |
 
 ### Dataset visualization
+
+Dưới đây là code để tạo lại biểu đồ thống kê dữ liệu:
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Code để tạo biểu đồ tổng dữ liệu
+def plot_total_data():
+    categories = ['Function simplify\n(Tool)', 'Normal Calculation\n(Tool + Exercise)', 'Theory\n(Crawl data tool + Human verify)']
+    values = [7200, 4090, 436]
+    colors = ['#ff0000', '#ffff00', '#00aa44']
+    
+    fig, ax = plt.subplots(figsize=(10, 6))
+    bars = ax.barh(categories, values, color=colors)
+    
+    # Thêm giá trị vào cuối mỗi thanh
+    for bar in bars:
+        width = bar.get_width()
+        ax.text(width + 50, bar.get_y() + bar.get_height()/2, 
+                f'{int(width)}', ha='left', va='center')
+    
+    ax.set_title('Total Data', fontsize=18, color='#ff0000', fontweight='bold')
+    ax.set_xlim(0, 8000)
+    ax.grid(axis='x', linestyle='-', alpha=0.3)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    
+    plt.tight_layout()
+    plt.savefig('images/total_data_visualization.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+# Code để tạo biểu đồ Karnaugh Maps level 3
+def plot_kmap_distribution():
+    labels = ['3-variable kmap', '4-variable kmap', '5-variable kmap', '6-variable kmap']
+    sizes = [49, 49, 1, 1]  # Phần trăm
+    colors = ['#ff7700', '#0099cc', '#00aa44', '#cc5500']
+    
+    fig, ax = plt.subplots(figsize=(8, 6))
+    ax.pie(sizes, colors=colors, startangle=90, 
+           wedgeprops={'edgecolor': 'white', 'linewidth': 1, 'antialiased': True})
+    
+    # Thêm chú thích với ô màu nền
+    for i, label in enumerate(labels):
+        percentage = f'{sizes[i]}%'
+        x_offset = 0.7 if i < 2 else 0.6
+        y_offset = 0.2 if i == 0 else -0.2 if i == 1 else 0.1 if i == 2 else -0.1
+        
+        plt.annotate(
+            label, 
+            xy=(x_offset, y_offset),
+            xytext=(1.1, 0),
+            textcoords='axes fraction',
+            bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="black", lw=1),
+            ha='left', va='center'
+        )
+        
+        # Thêm % vào biểu đồ
+        if sizes[i] > 2:  # Chỉ hiển thị % cho phần có kích thước đủ lớn
+            plt.annotate(
+                f'{sizes[i]}%',
+                xy=(x_offset, y_offset),
+                ha='center', va='center',
+                fontsize=12, fontweight='bold'
+            )
+    
+    ax.set_title('Karnaugh Maps - level 3', fontsize=18, color='#ff0000', fontweight='bold')
+    plt.tight_layout()
+    plt.savefig('images/kmap_distribution.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+# Code để tạo biểu đồ Normal Calculation level 2
+def plot_calculation_distribution():
+    labels = ['Number system conversions', 'Sign/Magnitude Number', 'Binary Calculator', 
+              "One's-complement", "Two's-complement"]
+    sizes = [75, 8, 7, 8, 2]  # Phần trăm
+    colors = ['#0099cc', '#00aa44', '#aa5500', '#884400', '#005588']
+    
+    fig, ax = plt.subplots(figsize=(8, 6))
+    ax.pie(sizes, colors=colors, startangle=90, 
+           wedgeprops={'edgecolor': 'white', 'linewidth': 1, 'antialiased': True})
+    
+    # Thêm % vào biểu đồ
+    for i, p in enumerate(sizes):
+        ang = 2 * np.pi * (sum(sizes[:i]) + p/2) / sum(sizes)
+        x = 0.7 * np.cos(ang)
+        y = 0.7 * np.sin(ang)
+        if p > 5:  # Chỉ hiển thị % cho phần có kích thước đủ lớn
+            ax.annotate(f'{p}%', xy=(x, y), ha='center', va='center', fontsize=12, fontweight='bold')
+    
+    # Tạo chú thích
+    ax.legend(labels, loc='lower center', bbox_to_anchor=(0.5, -0.15), ncol=2)
+    
+    ax.set_title('Normal Calculation - level 2', fontsize=18, color='#ff0000', fontweight='bold')
+    plt.tight_layout()
+    plt.savefig('images/calculation_distribution.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+# Để vẽ các biểu đồ, chạy các hàm:
+# plot_total_data()
+# plot_kmap_distribution()
+# plot_calculation_distribution()
+```
 
 ![*Total data by group*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
 
@@ -167,12 +145,11 @@ Dataset được chia thành 3 nhóm chính tương ứng với 3 level đầu t
 
 ![*Distribution of problem types in Level 3*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
 
-
 ## 3. Usage Guide
 
 ### Environment
 - Python >= 3.x
-- Required libraries: `pandas`, `numpy`, `...`
+- Required libraries: `pandas`, `numpy`, `matplotlib`, `plotly`
 
 ### Benchmark usage workflow
 
@@ -243,9 +220,9 @@ If you use this dataset for research, please cite as follows:
 ```
 @misc{edabk-ic-design-dataset,
   title={edabk-ic-design-dataset: Benchmark for digital circuit design},
-  author={Nhai-Dao},
+  author={EDABK Development Team},
   year={2024},
-  url={https://github.com/Nhai-Dao}
+  url={https://github.com/<your-repo>}
 }
 ```
 
