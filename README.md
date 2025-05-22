@@ -15,14 +15,62 @@ This dataset aims to fill these gaps by providing a comprehensive and diverse co
 
 ## 1. Overview of the Benchmark
 
-The benchmark is designed with progressive levels from basic to advanced, allowing users to approach concepts gradually and comprehensively.
-
-| Level | Module Name | Key Content | Skills Developed |
-|--------|------------|----------------|-------------------|
-| **Level 1** | Basic Theory | • Fundamental concepts (number systems, Boolean algebra)<br>• Logic gates, truth tables, K-maps<br>• Digital circuit design process<br>• Circuit optimization methods | Understanding and applying basic concepts |
-| **Level 2** | Basic Calculations | • Conversions between number systems (binary, decimal, etc.)<br>• Binary arithmetic<br>• Basic logic calculations | Performing calculations and conversions |
-| **Level 3** | Minimization and Proof | • Logic function minimization<br>• Formula proof<br>• Applying theory to practical problems | Analyzing and optimizing logic circuits |
-| **Level 4** | Circuit Implementation | • Converting formulas to circuits<br>• Designing circuits from specifications<br>• Optimizing circuit structures | Designing and implementing complete digital circuits |
+<table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
+    <thead>
+        <tr style="background-color: #009879; color: #ffffff; text-align: left;">
+            <th style="padding: 12px 15px;">Level</th>
+            <th style="padding: 12px 15px;">Description</th>
+            <th style="padding: 12px 15px;">Topics</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom: 1px solid #dddddd;">
+            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 1: Basic Theory</strong></td>
+            <td style="padding: 12px 15px;">Foundational knowledge and concepts</td>
+            <td style="padding: 12px 15px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Definitions and fundamental concepts</li>
+                    <li>Steps to design a digital circuit</li>
+                    <li>Circuit optimization process</li>
+                    <li>Circuit verification methods</li>
+                </ul>
+            </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #dddddd;">
+            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 2: Basic Calculations</strong></td>
+            <td style="padding: 12px 15px;">Essential numerical operations</td>
+            <td style="padding: 12px 15px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Binary to decimal conversion</li>
+                    <li>Binary arithmetic</li>
+                    <li>Basic logic calculations</li>
+                </ul>
+            </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #dddddd;">
+            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 3: Minimization and Proof</strong></td>
+            <td style="padding: 12px 15px;">Advanced logic operations</td>
+            <td style="padding: 12px 15px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Logic function minimization</li>
+                    <li>Formula proof</li>
+                    <li>Applying theory to practical problems</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 4: Circuit Implementation</strong></td>
+            <td style="padding: 12px 15px;">Practical circuit design</td>
+            <td style="padding: 12px 15px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Converting formulas to circuits</li>
+                    <li>Designing circuits from specifications</li>
+                    <li>Circuit structure optimization</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## 2. Dataset Scale
 
