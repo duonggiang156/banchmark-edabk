@@ -139,10 +139,10 @@ pie title Normal Calculation - Level 2
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': { 'pie1': '#ff7f0e', 'pie2': '#1f77b4', 'pie3': '#2ca02c', 'pie4': '#d62728'}}}%%
 pie title Karnaugh Maps - Level 3
-    "3-variable kmap" : 49
-    "4-variable kmap" : 49
-    "5-variable kmap" : 1
-    "6-variable kmap" : 1
+    "3-variable kmap" : 48.6
+    "4-variable kmap" : 48.6
+    "5-variable kmap" : 1.4
+    "6-variable kmap" : 1.4
 ```
 
 ### 📋 Detailed Breakdown
@@ -152,11 +152,11 @@ pie title Karnaugh Maps - Level 3
 
 | Problem Type | Count | Percentage |
 |--------------|-------|------------|
-| Number system conversions | 3,068 | 75% |
-| Two's-complement | 327 | 8% |
-| Sign/Magnitude Number | 327 | 8% |
-| One's-complement | 286 | 7% |
-| Binary Calculator | 82 | 2% |
+| Number system conversions | 3,072 | 75% |
+| Two's-complement | 309 | 8% |
+| Sign/Magnitude Number | 312 | 8% |
+| One's-complement | 297 | 7% |
+| Binary Calculator | 100 | 2% |
 
 </details>
 
@@ -165,10 +165,10 @@ pie title Karnaugh Maps - Level 3
 
 | K-map Type | Count | Percentage |
 |------------|-------|------------|
-| 3-variable kmap | 3,528 | 49% |
-| 4-variable kmap | 3,528 | 49% |
-| 5-variable kmap | 72 | 1% |
-| 6-variable kmap | 72 | 1% |
+| 3-variable kmap | 3,500 | 48.6% |
+| 4-variable kmap | 3,500 | 48.6% |
+| 5-variable kmap | 100 | 1.4% |
+| 6-variable kmap | 100 | 1.4% |
 
 </details>
 
