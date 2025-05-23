@@ -172,7 +172,7 @@ pie title Karnaugh Maps - Level 3
 
 </details>
 
-## 📈 Current Benchmark Results
+## 3. Current Benchmark Results
 
 ### Performance Comparison Across Different Models
 
@@ -225,33 +225,21 @@ pie title Karnaugh Maps - Level 3
 
 ### 🏆 Key Performance Insights
 
-```
-📊 Accuracy Distribution:
-Theory Questions    ████████████████████████████████████████████████████ 94.8% (Our Package)
-                   ████████████████████████████████████████████ 89.1% (Claude-3.5)
-                   ████████████████████████████████████████████ 87.2% (GPT-4)
-                   ████████████████████████████████████ 78.4% (Gemini Pro)
-
-Calculations       ████████████████████████████████████████████████████ 96.2% (Our Package)
-                   ████████████████████████████████████████████████ 92.5% (GPT-4)
-                   ████████████████████████████████████████████ 88.7% (Claude-3.5)
-                   ███████████████████████████████████████████ 85.9% (Gemini Pro)
-
-K-Maps             ████████████████████████████████████████████████ 89.7% (Our Package)
-                   ██████████████████████████████████████ 76.2% (Claude-3.5)
-                   ████████████████████████████████████ 73.8% (GPT-4)
-                   ███████████████████████████████ 65.3% (Gemini Pro)
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4A90E2', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#357ABD'}}}%%
+xychart-beta
+    title "Performance Comparison by Category"
+    x-axis [Theory, Calculations, K-Maps]
+    y-axis "Accuracy (%)" 60 --> 100
+    bar [94.8, 96.2, 89.7] 
+    bar [89.1, 88.7, 76.2]
+    bar [87.2, 92.5, 73.8]
+    bar [78.4, 85.9, 65.3]
 ```
 
-### 📐 Mathematical Performance Analysis
+**Performance Improvement**: Our Package achieves **+10.5%** better overall performance than the best LLM (Claude-3.5: 84.7% vs Our Package: 93.6%)
 
-**Accuracy Formula**: $Accuracy = \frac{Correct\_Answers}{Total\_Questions} \times 100\%$
-
-**Weighted Score**: $Overall\_Score = 0.2 \times Level_1 + 0.4 \times Level_2 + 0.4 \times Level_3$
-
-**Performance Improvement**: $Improvement = \frac{Our\_Package - Best\_LLM}{Best\_LLM} \times 100\% = \frac{93.6 - 84.7}{84.7} \times 100\% = +10.5\%$
-
-## 3. Usage Guide
+## 4. Usage Guide
 
 ### Environment
 - Python >= 3.8
@@ -436,234 +424,25 @@ for i, result in enumerate(results):
 - Support evaluation and comparison of AI/LLM models in digital electronics.
 - Enable expansion, contribution, and reuse of data within the research community.
 
-## 🚀 Quick Start
-
-1. Clone repository:
-   ```bash
-   git clone <link-repo>
-   cd <repo-folder-name>
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run a sample script:
-   ```bash
-   python src/run_benchmark.py --dataset 1cau_convert_so.xlsx
-   ```
 
 ## 🔮 Future Development Roadmap
 
-### 🤖 AI Agent Architecture
+### 🎯 Development Priorities
 
-**Phase 1: Intelligent Circuit Design Agent**
-```python
-# Future implementation preview
-from edabk_agent import DigitalCircuitAgent
+#### 🤖 **AI Agent Transformation**
+Transform the current benchmark into an intelligent autonomous agent capable of end-to-end digital circuit design, optimization, and verification with natural language understanding.
 
-agent = DigitalCircuitAgent(
-    model="fine-tuned-llama3-circuit",
-    capabilities=[
-        "circuit_design",
-        "optimization",
-        "verification",
-        "troubleshooting"
-    ]
-)
+#### ⚡ **Advanced Circuit Support**
+Extend capabilities to support comprehensive circuit types including combinational/sequential logic, timing analysis, clock wave generation, waveform analysis, and power optimization.
 
-# Natural language to circuit design
-result = agent.design_from_description(
-    "Create a 4-bit ALU with arithmetic and logic operations"
-)
-```
+#### 💬 **Chat Application Integration**
+Develop interactive chat interface with voice commands, hand-drawn circuit recognition, real-time collaboration, and step-by-step guided learning for enhanced user experience.
 
-**Enhanced Capabilities:**
-- 🧠 **Multi-modal Understanding**: Process circuit diagrams, schematics, and natural language
-- 🔄 **Iterative Design**: Automatically refine designs based on requirements
-- 🎯 **Goal-oriented Problem Solving**: Break complex problems into manageable sub-tasks
-- 📚 **Memory Integration**: Learn from previous designs and user feedback
+#### 🎓 **Illuma Educational Platform**
+Integrate with Illuma to create a complete student guidance system featuring personalized learning paths, automated assessment, progress tracking, and gamified learning experiences.
 
-### ⚡ Advanced Circuit Support
 
-#### 🔲 Logic Circuit Extensions
-
-```python
-# Extended circuit types support
-supported_circuits = {
-    "combinational": [
-        "multiplexers", "demultiplexers", "encoders", 
-        "decoders", "comparators", "parity_generators"
-    ],
-    "sequential": [
-        "flip_flops", "counters", "shift_registers", 
-        "state_machines", "memory_units"
-    ],
-    "arithmetic": [
-        "adders", "subtractors", "multipliers", 
-        "dividers", "alu_units"
-    ]
-}
-
-# Advanced analysis capabilities
-circuit_analyzer = AdvancedCircuitAnalyzer()
-analysis = circuit_analyzer.full_analysis(
-    circuit_type="sequential",
-    timing_analysis=True,
-    power_estimation=True,
-    area_optimization=True
-)
-```
-
-#### 🌊 Clock Wave Analysis
-
-```python
-# Timing analysis and clock wave generation
-from edabk_timing import ClockWaveAnalyzer
-
-timing_analyzer = ClockWaveAnalyzer()
-
-# Analyze setup and hold times
-timing_report = timing_analyzer.analyze_timing(
-    circuit=your_circuit,
-    clock_frequency="100MHz",
-    analyze_critical_path=True
-)
-
-# Generate clock wave diagrams
-wave_diagram = timing_analyzer.generate_waveform(
-    signals=["CLK", "Data_In", "Data_Out", "Enable"],
-    time_window="0-100ns"
-)
-```
-
-### 💬 Chat Application Integration
-
-#### 📱 Web-based Interactive Platform
-
-```javascript
-// React/Next.js integration example
-import { DigitalCircuitChat } from 'edabk-chat-component';
-
-function CircuitDesignApp() {
-  return (
-    <DigitalCircuitChat
-      apiEndpoint="/api/circuit-solver"
-      features={[
-        'voice-input',
-        'diagram-drawing',
-        'step-by-step-solutions',
-        'circuit-simulation'
-      ]}
-      theme="dark"
-    />
-  );
-}
-```
-
-**Chat Features:**
-- 🎙️ **Voice Commands**: "Design a full adder" → Instant circuit generation
-- ✏️ **Hand-drawn Circuit Recognition**: Sketch circuits, get instant analysis
-- 🎬 **Interactive Tutorials**: Step-by-step guided learning
-- 📊 **Real-time Simulation**: Test circuits directly in chat
-
-#### 🔌 API Endpoints
-
-```python
-# RESTful API for integration
-@app.post("/api/circuit/design")
-async def design_circuit(request: CircuitDesignRequest):
-    """Design circuit from natural language description"""
-    
-@app.post("/api/circuit/analyze")
-async def analyze_circuit(request: CircuitAnalysisRequest):
-    """Analyze existing circuit for optimization"""
-    
-@app.post("/api/kmap/minimize")
-async def minimize_kmap(request: KmapRequest):
-    """Minimize Boolean expressions using K-maps"""
-```
-
-### 🎓 Illuma Integration & Educational Platform
-
-#### 🏫 Complete Student Guidance System
-
-```python
-# Illuma integration architecture
-from illuma_integration import (
-    StudentProgressTracker,
-    AdaptiveLearningEngine,
-    AssessmentGenerator
-)
-
-class DigitalCircuitTutor:
-    def __init__(self):
-        self.progress_tracker = StudentProgressTracker()
-        self.learning_engine = AdaptiveLearningEngine()
-        self.assessment_gen = AssessmentGenerator()
-    
-    def personalized_learning_path(self, student_id):
-        """Generate customized learning journey"""
-        current_level = self.progress_tracker.get_level(student_id)
-        weak_areas = self.progress_tracker.identify_gaps(student_id)
-        
-        return self.learning_engine.create_path(
-            current_level=current_level,
-            focus_areas=weak_areas,
-            learning_style=self.get_learning_style(student_id)
-        )
-```
-
-**Educational Features:**
-
-🎯 **Personalized Learning Paths**
-- Adaptive difficulty based on student performance
-- Customized problem sets targeting weak areas
-- Progress tracking with detailed analytics
-
-📝 **Intelligent Assessment System**
-- Auto-generated quizzes and assignments
-- Instant feedback with step-by-step explanations
-- Plagiarism detection for circuit designs
-
-🎮 **Gamification Elements**
-- Achievement badges for mastering concepts
-- Leaderboards for healthy competition
-- Interactive challenges and contests
-
-📚 **Comprehensive Learning Resources**
-- Interactive textbooks with embedded simulations
-- Video tutorials synchronized with practice problems
-- Virtual lab environments for hands-on learning
-
-### 🛣️ Implementation Timeline
-
-```mermaid
-gantt
-    title Development Roadmap 2024-2026
-    dateFormat  YYYY-MM-DD
-    section Phase 1: Foundation
-    Core Package Stability    :done, foundation, 2024-01-01, 2024-06-30
-    Basic Agent Framework     :active, agent-basic, 2024-07-01, 2024-09-30
-    
-    section Phase 2: Enhancement
-    Advanced Circuit Support  :circuit-advanced, 2024-10-01, 2024-12-31
-    Clock Wave Analysis      :timing, 2025-01-01, 2025-03-31
-    
-    section Phase 3: Integration
-    Chat Application         :chat-app, 2025-04-01, 2025-06-30
-    API Development         :api-dev, 2025-07-01, 2025-09-30
-    
-    section Phase 4: Education
-    Illuma Integration      :illuma, 2025-10-01, 2025-12-31
-    Student Platform        :platform, 2026-01-01, 2026-06-30
-```
-
-### 🤝 Partnership Opportunities
-
-- 🏫 **Educational Institutions**: Integration with LMS systems
-- 💼 **Industry Partners**: Enterprise-level circuit design tools
-- 🔬 **Research Organizations**: Advanced algorithm development
-- 🌐 **Open Source Community**: Collaborative development ecosystem
+**Target**: Create the most comprehensive AI-powered digital circuit design education platform worldwide.
 
 ## 🤝 Contribution & Development
 
