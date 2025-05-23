@@ -115,12 +115,11 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 #### 📊 Total Data Distribution
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4A90E2', 'primaryTextColor': '#fff', 'primaryBorderColor': '#357ABD', 'lineColor': '#357ABD', 'secondaryColor': '#7ED321', 'tertiaryColor': '#F5A623'}}}%%
-xychart-beta
-    title "Total Dataset Distribution"
-    x-axis [Function_Simplify, Normal_Calculation, Theory]
-    y-axis "Number of Samples" 0 --> 8000
-    bar [7200, 4090, 436]
+%%{init: {'theme':'base', 'themeVariables': { 'pie1': '#4A90E2', 'pie2': '#27AE60', 'pie3': '#E67E22', 'pieLegendTextColor': '#2C3E50', 'pieTitleTextColor': '#2C3E50'}}}%%
+pie title Total Dataset Distribution
+    "Function Simplify (7,200)" : 7200
+    "Normal Calculation (4,090)" : 4090
+    "Theory (436)" : 436
 ```
 
 #### 📈 Level 2 - Normal Calculation Distribution
