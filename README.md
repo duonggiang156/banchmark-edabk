@@ -90,21 +90,21 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
     </thead>
     <tbody>
         <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>1</strong></td>
+            <td style="padding: 12px 15px; background-color: #f3f3f3; text-align: center;"><strong>1</strong></td>
             <td style="padding: 12px 15px;">Basic Theory</td>
-            <td style="padding: 12px 15px;"><strong>436</strong></td>
+            <td style="padding: 12px 15px; text-align: center;"><strong>436</strong></td>
             <td style="padding: 12px 15px;">Comprehensive theory questions covering all key topics in digital electronics</td>
         </tr>
         <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>2</strong></td>
+            <td style="padding: 12px 15px; background-color: #f3f3f3; text-align: center;"><strong>2</strong></td>
             <td style="padding: 12px 15px;">Basic Calculations</td>
-            <td style="padding: 12px 15px;"><strong>4090</strong></td>
+            <td style="padding: 12px 15px; text-align: center;"><strong>4090</strong></td>
             <td style="padding: 12px 15px;">Mainly number system conversions, binary arithmetic, signed numbers, complements</td>
         </tr>
         <tr>
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>3</strong></td>
+            <td style="padding: 12px 15px; background-color: #f3f3f3; text-align: center;"><strong>3</strong></td>
             <td style="padding: 12px 15px;">Function Minimization / Karnaugh Map</td>
-            <td style="padding: 12px 15px;"><strong>7200</strong></td>
+            <td style="padding: 12px 15px; text-align: center;"><strong>7200</strong></td>
             <td style="padding: 12px 15px;">Logic function minimization problems with 3, 4, 5, 6-variable K-maps</td>
         </tr>
     </tbody>
@@ -115,7 +115,7 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 #### 📊 Total Data Distribution
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ff0000', 'primaryTextColor': '#fff', 'primaryBorderColor': '#ff0000', 'lineColor': '#ff0000', 'secondaryColor': '#006100', 'tertiaryColor': '#fff'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4A90E2', 'primaryTextColor': '#fff', 'primaryBorderColor': '#357ABD', 'lineColor': '#357ABD', 'secondaryColor': '#7ED321', 'tertiaryColor': '#F5A623'}}}%%
 xychart-beta
     title "Total Dataset Distribution"
     x-axis [Function_Simplify, Normal_Calculation, Theory]
@@ -145,6 +145,7 @@ pie title Karnaugh Maps - Level 3
     "5-variable kmap" : 1
     "6-variable kmap" : 1
 ```
+
 ### 📋 Detailed Breakdown
 
 <details>
