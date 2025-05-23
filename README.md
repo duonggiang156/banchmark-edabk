@@ -10,8 +10,11 @@ This dataset was created to address critical gaps in the field of digital circui
 - There is a lack of standardized datasets for Karnaugh maps and logic function minimization techniques.
 - Standardized datasets for number system conversions and calculations in different numerical systems are missing.
 - There is a need for a platform to evaluate AI model performance in solving digital circuit design problems.
+- **Fine-tuning and Training Support**: This benchmark serves as a comprehensive training resource for fine-tuning various Large Language Models (LLMs) and specialized AI models to excel in digital circuit design tasks, enabling domain-specific model optimization.
 
-This dataset aims to fill these gaps by providing a comprehensive and diverse collection of data for both academic research and industrial applications.
+**How Our Python Package Addresses These Challenges:**
+
+Our comprehensive Python package revolutionizes the digital circuit design landscape by providing an integrated solution that bridges theoretical knowledge and practical implementation. The package offers automated evaluation frameworks that seamlessly assess model performance across multiple complexity levels, from basic number system conversions to advanced Karnaugh map optimizations. Through its modular architecture, researchers and educators can effortlessly customize benchmarks, generate diverse problem sets, and conduct systematic comparative studies between different AI approaches. The package's intelligent data preprocessing capabilities ensure consistent formatting and validation, while its built-in visualization tools transform complex circuit design concepts into intuitive, interpretable results. This holistic approach not only standardizes the evaluation process but also accelerates the development cycle for next-generation AI-powered digital design tools.
 
 ## 1. Overview of the Benchmark
 
@@ -76,19 +79,94 @@ This dataset aims to fill these gaps by providing a comprehensive and diverse co
 
 The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
-| Level | Name | Quantity | Description |
-|-------|------|----------|-------------|
-| 1 | Basic Theory | 436 | Comprehensive theory questions covering all key topics in digital electronics |
-| 2 | Basic Calculations | 4090 | Mainly number system conversions, binary arithmetic, signed numbers, complements, ... |
-| 3 | Function Minimization / Karnaugh Map | 7200 | Logic function minimization problems with 3, 4, 5, 6-variable K-maps |
+<table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
+    <thead>
+        <tr style="background-color: #009879; color: #ffffff; text-align: left;">
+            <th style="padding: 12px 15px;">Level</th>
+            <th style="padding: 12px 15px;">Name</th>
+            <th style="padding: 12px 15px;">Quantity</th>
+            <th style="padding: 12px 15px;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom: 1px solid #dddddd;">
+            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>1</strong></td>
+            <td style="padding: 12px 15px;">Basic Theory</td>
+            <td style="padding: 12px 15px;"><strong>436</strong></td>
+            <td style="padding: 12px 15px;">Comprehensive theory questions covering all key topics in digital electronics</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #dddddd;">
+            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>2</strong></td>
+            <td style="padding: 12px 15px;">Basic Calculations</td>
+            <td style="padding: 12px 15px;"><strong>4090</strong></td>
+            <td style="padding: 12px 15px;">Mainly number system conversions, binary arithmetic, signed numbers, complements</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>3</strong></td>
+            <td style="padding: 12px 15px;">Function Minimization / Karnaugh Map</td>
+            <td style="padding: 12px 15px;"><strong>7200</strong></td>
+            <td style="padding: 12px 15px;">Logic function minimization problems with 3, 4, 5, 6-variable K-maps</td>
+        </tr>
+    </tbody>
+</table>
 
-### Dataset visualization
+### Dataset Visualization
 
-![*Total data by group*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/total.jpg)
+#### 📊 Total Data Distribution
 
-![*Distribution of problem types in Level 2*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level2-data.jpg)
+```
+Function Simplify (Tool)                    ████████████████████████████████████████████████████████████ 7200 (60.8%)
+Normal Calculation (Tool + Exercise)        ████████████████████████████████████ 4090 (34.5%)
+Theory (Crawl data tool + Human verify)     ███ 436 (3.7%)
+                                            
+Total: 11,726 samples
+```
 
-![*Distribution of problem types in Level 3*](https://github.com/duonggiang156/banchmark-edabk/blob/master/images/level3-data.jpg)
+#### 📈 Level 2 - Normal Calculation Distribution
+
+```
+Number system conversions    ███████████████████████████████████████████████████████████████████████████ 75%
+Two's-complement             ████████ 8%
+Sign/Magnitude Number        ████████ 8%
+One's-complement             ███████ 7%
+Binary Calculator            ██ 2%
+```
+
+#### 📈 Level 3 - Karnaugh Maps Distribution
+
+```
+3-variable kmap              ████████████████████████████████████████████████ 49%
+4-variable kmap              ████████████████████████████████████████████████ 49%
+5-variable kmap              █ 1%
+6-variable kmap              █ 1%
+```
+
+### 📋 Detailed Breakdown
+
+<details>
+<summary><strong>Level 2: Normal Calculation (4,090 samples)</strong></summary>
+
+| Problem Type | Count | Percentage |
+|--------------|-------|------------|
+| Number system conversions | 3,068 | 75% |
+| Two's-complement | 327 | 8% |
+| Sign/Magnitude Number | 327 | 8% |
+| One's-complement | 286 | 7% |
+| Binary Calculator | 82 | 2% |
+
+</details>
+
+<details>
+<summary><strong>Level 3: Karnaugh Maps (7,200 samples)</strong></summary>
+
+| K-map Type | Count | Percentage |
+|------------|-------|------------|
+| 3-variable kmap | 3,528 | 49% |
+| 4-variable kmap | 3,528 | 49% |
+| 5-variable kmap | 72 | 1% |
+| 6-variable kmap | 72 | 1% |
+
+</details>
 
 ## 3. Usage Guide
 
@@ -170,8 +248,3 @@ If you use this dataset for research, please cite as follows:
   url={https://github.com/<your-repo>}
 }
 ```
-
-
-
-
-
