@@ -114,33 +114,37 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
 #### 📊 Total Data Distribution
 
-```
-Function Simplify (Tool)                    ████████████████████████████████████████████████████████████ 7200 (60.8%)
-Normal Calculation (Tool + Exercise)        ████████████████████████████████████ 4090 (34.5%)
-Theory (Crawl data tool + Human verify)     ███ 436 (3.7%)
-                                            
-Total: 11,726 samples
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ff0000', 'primaryTextColor': '#fff', 'primaryBorderColor': '#ff0000', 'lineColor': '#ff0000', 'secondaryColor': '#006100', 'tertiaryColor': '#fff'}}}%%
+xychart-beta
+    title "Total Dataset Distribution"
+    x-axis [Function_Simplify, Normal_Calculation, Theory]
+    y-axis "Number of Samples" 0 --> 8000
+    bar [7200, 4090, 436]
 ```
 
 #### 📈 Level 2 - Normal Calculation Distribution
 
-```
-Number system conversions    ███████████████████████████████████████████████████████████████████████████ 75%
-Two's-complement             ████████ 8%
-Sign/Magnitude Number        ████████ 8%
-One's-complement             ███████ 7%
-Binary Calculator            ██ 2%
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'pie1': '#1f77b4', 'pie2': '#ff7f0e', 'pie3': '#2ca02c', 'pie4': '#d62728', 'pie5': '#9467bd'}}}%%
+pie title Normal Calculation - Level 2
+    "Number system conversions" : 75
+    "Two's-complement" : 8
+    "Sign/Magnitude Number" : 8
+    "One's-complement" : 7
+    "Binary Calculator" : 2
 ```
 
 #### 📈 Level 3 - Karnaugh Maps Distribution
 
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'pie1': '#ff7f0e', 'pie2': '#1f77b4', 'pie3': '#2ca02c', 'pie4': '#d62728'}}}%%
+pie title Karnaugh Maps - Level 3
+    "3-variable kmap" : 49
+    "4-variable kmap" : 49
+    "5-variable kmap" : 1
+    "6-variable kmap" : 1
 ```
-3-variable kmap              ████████████████████████████████████████████████ 49%
-4-variable kmap              ████████████████████████████████████████████████ 49%
-5-variable kmap              █ 1%
-6-variable kmap              █ 1%
-```
-
 ### 📋 Detailed Breakdown
 
 <details>
