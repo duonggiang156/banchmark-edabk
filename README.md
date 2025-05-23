@@ -225,16 +225,23 @@ pie title Karnaugh Maps - Level 3
 
 ### 🏆 Key Performance Insights
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4A90E2', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#357ABD'}}}%%
-xychart-beta
-    title "Performance Comparison by Category"
-    x-axis [Theory, Calculations, K-Maps]
-    y-axis "Accuracy (%)" 60 --> 100
-    bar [94.8, 96.2, 89.7] 
-    bar [89.1, 88.7, 76.2]
-    bar [87.2, 92.5, 73.8]
-    bar [78.4, 85.9, 65.3]
+```
+📊 Accuracy Distribution:
+
+Theory Questions    ██████████████████████████████████████████████████ 94.8% (Our Package)
+                    ████████████████████████████████████████████ 89.1% (Claude-3.5)
+                    ████████████████████████████████████████████ 87.2% (GPT-4)
+                    ████████████████████████████████████ 78.4% (Gemini Pro)
+
+Calculations        ████████████████████████████████████████████████████ 96.2% (Our Package)
+                    ████████████████████████████████████████████████ 92.5% (GPT-4)
+                    ████████████████████████████████████████████ 88.7% (Claude-3.5)
+                    ███████████████████████████████████████████ 85.9% (Gemini Pro)
+
+K-Maps              ████████████████████████████████████████████████ 89.7% (Our Package)
+                    ██████████████████████████████████████ 76.2% (Claude-3.5)
+                    ████████████████████████████████████ 73.8% (GPT-4)
+                    ███████████████████████████████ 65.3% (Gemini Pro)
 ```
 
 **Performance Improvement**: Our Package achieves **+10.5%** better overall performance than the best LLM (Claude-3.5: 84.7% vs Our Package: 93.6%)
@@ -424,10 +431,7 @@ for i, result in enumerate(results):
 - Support evaluation and comparison of AI/LLM models in digital electronics.
 - Enable expansion, contribution, and reuse of data within the research community.
 
-
 ## 🔮 Future Development Roadmap
-
-### 🎯 Development Priorities
 
 #### 🤖 **AI Agent Transformation**
 Transform the current benchmark into an intelligent autonomous agent capable of end-to-end digital circuit design, optimization, and verification with natural language understanding.
@@ -462,8 +466,3 @@ If you use this dataset for research, please cite as follows:
   url={https://github.com/<your-repo>}
 }
 ```
-
-
-
-
-
