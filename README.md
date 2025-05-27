@@ -1,4 +1,4 @@
-#🎓 edabk-ic-design-dataset
+🎓 edabk-ic-design-dataset
 
 <div align="center">
   <img src="https://github.com/duonggiang156/benchmark-edabk/blob/master/images/logo_edabk.jpg" alt="EDA-BK Laboratory" width="300"/>
@@ -38,6 +38,7 @@ Our standardized evaluation suite enables systematic comparison of AI/LLM perfor
 ### 🗃️ Dataset Collection
 A meticulously curated collection of 11,700+ problems spanning four difficulty levels, designed to support both educational applications and cutting-edge AI research in digital circuit design.
 
+<div align="center">
 <table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
     <thead>
         <tr style="background-color: #009879; color: #ffffff; text-align: left;">
@@ -94,6 +95,7 @@ A meticulously curated collection of 11,700+ problems spanning four difficulty l
         </tr>
     </tbody>
 </table>
+</div>
 
 ## 2. Package
 
@@ -136,6 +138,7 @@ print(f"255 in binary: {binary_result}")
 
 ### ⚡ Performance Comparison Across Different Models
 
+<div align="center">
 <table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
     <thead>
         <tr style="background-color: #2C3E50; color: #ffffff; text-align: center;">
@@ -182,11 +185,12 @@ print(f"255 in binary: {binary_result}")
         </tr>
     </tbody>
 </table>
+</div>
 
 ### 🏆 Key Performance Insights
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#E67E22', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#D35400', 'lineColor': '#BDC3C7', 'secondaryColor': '#3498DB', 'tertiaryColor': '#95A5A6', 'background': '#ECF0F1', 'mainBkg': '#FFFFFF'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#2E8B57', 'primaryTextColor': '#FFFFFF', 'primaryBorderColor': '#1F5F3F', 'lineColor': '#34495E', 'secondaryColor': '#E74C3C', 'tertiaryColor': '#F39C12', 'background': '#F8F9FA', 'mainBkg': '#FFFFFF', 'cScale0': '#2E8B57', 'cScale1': '#3498DB', 'cScale2': '#E67E22', 'cScale3': '#E74C3C'}}}%%
 xychart-beta
     title "Digital Circuit Design Benchmark Results"
     x-axis ["Our Package (93.6%)", "Claude-3.5 (84.7%)", "GPT-4 (84.5%)", "Gemini Pro (76.5%)"]
