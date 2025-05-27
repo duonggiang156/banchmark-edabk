@@ -219,7 +219,6 @@ xychart-beta
 #### 📊 Digital Circuit Design Dataset Structure
 
 <div align="center">
-### 🌟 **Sunburst Chart - 3 Concentric Rings**
   
 [![Biểu đồ Sunburst](https://github.com/duonggiang156/benchmark-edabk/blob/master/images/data_collection.png)](https://chart-studio.plotly.com/~duonggiang156/5/)
 
