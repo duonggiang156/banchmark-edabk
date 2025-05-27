@@ -269,102 +269,61 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 #### 📊 Digital Circuit Design Dataset Structure
 
 <div align="center">
-<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle -->
-  <circle cx="300" cy="300" r="290" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
-  
-  <!-- Center circle: Benchmark -->
-  <circle cx="300" cy="300" r="80" fill="#343a40" stroke="#6c757d" stroke-width="3"/>
-  <text x="300" y="295" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Benchmark</text>
-  <text x="300" y="315" text-anchor="middle" font-size="12" fill="white">Dataset</text>
-  <text x="300" y="330" text-anchor="middle" font-size="11" fill="#adb5bd">(11,726)</text>
-  
-  <!-- Middle ring segments -->
-  <!-- Theory: 30 degrees (436/11726 * 360 ≈ 13.4 degrees, but we'll make it visible) -->
-  <path d="M 300 150 A 150 150 0 0 1 380 220" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
-  <text x="340" y="180" text-anchor="middle" font-size="12" font-weight="bold">Theory</text>
-  <text x="340" y="195" text-anchor="middle" font-size="10">(436)</text>
-  
-  <!-- Normal Calculation: 120 degrees -->
-  <path d="M 380 220 A 150 150 0 0 1 380 380" fill="#e8f5e8" stroke="#4caf50" stroke-width="2"/>
-  <text x="430" y="290" text-anchor="middle" font-size="12" font-weight="bold" transform="rotate(90 430 290)">Normal</text>
-  <text x="430" y="310" text-anchor="middle" font-size="12" font-weight="bold" transform="rotate(90 430 310)">Calculation</text>
-  <text x="430" y="330" text-anchor="middle" font-size="10" transform="rotate(90 430 330)">(4,090)</text>
-  
-  <!-- Function Simplify: 210 degrees -->
-  <path d="M 380 380 A 150 150 0 1 1 300 150" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
-  <text x="220" y="380" text-anchor="middle" font-size="12" font-weight="bold">Function</text>
-  <text x="220" y="395" text-anchor="middle" font-size="12" font-weight="bold">Simplify</text>
-  <text x="220" y="410" text-anchor="middle" font-size="10">(7,200)</text>
-  
-  <!-- Outer ring segments -->
-  <!-- Theory outer (no subdivisions) -->
-  <path d="M 300 80 A 220 220 0 0 1 410 140" fill="#bbdefb" stroke="#1976d2" stroke-width="1"/>
-  <text x="355" y="110" text-anchor="middle" font-size="10">Theory Problems</text>
-  
-  <!-- Normal Calculation subdivisions -->
-  <!-- Binary Calculator -->
-  <path d="M 410 140 A 220 220 0 0 1 450 180" fill="#c8e6c9" stroke="#4caf50" stroke-width="1"/>
-  <text x="435" y="165" text-anchor="middle" font-size="9" transform="rotate(45 435 165)">Binary Calculator</text>
-  <text x="440" y="175" text-anchor="middle" font-size="8" transform="rotate(45 440 175)">(100)</text>
-  
-  <!-- Number System Conversions -->
-  <path d="M 450 180 A 220 220 0 0 1 520 300" fill="#a5d6a7" stroke="#4caf50" stroke-width="1"/>
-  <text x="490" y="230" text-anchor="middle" font-size="9" transform="rotate(90 490 230)">Number System</text>
-  <text x="490" y="250" text-anchor="middle" font-size="9" transform="rotate(90 490 250)">Conversions</text>
-  <text x="490" y="270" text-anchor="middle" font-size="8" transform="rotate(90 490 270)">(3,072)</text>
-  
-  <!-- Sign/Magnitude -->
-  <path d="M 520 300 A 220 220 0 0 1 490 350" fill="#81c784" stroke="#4caf50" stroke-width="1"/>
-  <text x="510" y="330" text-anchor="middle" font-size="9" transform="rotate(90 510 330)">Sign/Magnitude</text>
-  <text x="505" y="340" text-anchor="middle" font-size="8" transform="rotate(90 505 340)">(312)</text>
-  
-  <!-- One's-complement -->
-  <path d="M 490 350 A 220 220 0 0 1 450 420" fill="#66bb6a" stroke="#4caf50" stroke-width="1"/>
-  <text x="470" y="390" text-anchor="middle" font-size="9" transform="rotate(45 470 390)">One's-complement</text>
-  <text x="465" y="400" text-anchor="middle" font-size="8" transform="rotate(45 465 400)">(297)</text>
-  
-  <!-- Two's-complement -->
-  <path d="M 450 420 A 220 220 0 0 1 410 460" fill="#4caf50" stroke="#388e3c" stroke-width="1"/>
-  <text x="430" y="445" text-anchor="middle" font-size="9" transform="rotate(45 430 445)">Two's-complement</text>
-  <text x="425" y="455" text-anchor="middle" font-size="8" transform="rotate(45 425 455)">(309)</text>
-  
-  <!-- Function Simplify subdivisions -->
-  <!-- 3-variable kmap -->
-  <path d="M 410 460 A 220 220 0 0 1 190 460" fill="#ffcc80" stroke="#ff9800" stroke-width="1"/>
-  <text x="300" y="485" text-anchor="middle" font-size="10">3-variable K-map (3,500)</text>
-  
-  <!-- 4-variable kmap -->
-  <path d="M 190 460 A 220 220 0 0 1 80 300" fill="#ffb74d" stroke="#ff9800" stroke-width="1"/>
-  <text x="135" y="390" text-anchor="middle" font-size="10" transform="rotate(-45 135 390)">4-variable K-map</text>
-  <text x="130" y="400" text-anchor="middle" font-size="9" transform="rotate(-45 130 400)">(3,500)</text>
-  
-  <!-- 5-variable kmap -->
-  <path d="M 80 300 A 220 220 0 0 1 110 250" fill="#ff9800" stroke="#f57c00" stroke-width="1"/>
-  <text x="95" y="275" text-anchor="middle" font-size="9" transform="rotate(-90 95 275)">5-variable</text>
-  <text x="95" y="290" text-anchor="middle" font-size="8" transform="rotate(-90 95 290)">(100)</text>
-  
-  <!-- 6-variable kmap -->
-  <path d="M 110 250 A 220 220 0 0 1 190 140" fill="#ff8f00" stroke="#f57c00" stroke-width="1"/>
-  <text x="150" y="200" text-anchor="middle" font-size="9" transform="rotate(-45 150 200)">6-variable</text>
-  <text x="145" y="210" text-anchor="middle" font-size="8" transform="rotate(-45 145 210)">(100)</text>
-  
-  <!-- Connecting back to Theory -->
-  <path d="M 190 140 A 220 220 0 0 1 300 80" fill="#90caf9" stroke="#1976d2" stroke-width="1"/>
-  
-  <!-- Title -->
-  <text x="300" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">Digital Circuit Design Dataset Structure</text>
-  
-  <!-- Legend -->
-  <rect x="450" y="500" width="15" height="15" fill="#e3f2fd"/>
-  <text x="470" y="512" font-size="12">Theory</text>
-  
-  <rect x="450" y="520" width="15" height="15" fill="#e8f5e8"/>
-  <text x="470" y="532" font-size="12">Normal Calculation</text>
-  
-  <rect x="450" y="540" width="15" height="15" fill="#fff3e0"/>
-  <text x="470" y="552" font-size="12">Function Simplify</text>
-</svg>
+
+### 🌟 **Sunburst Visualization - 3 Concentric Rings**
+
+<table style="width:80%; margin: 20px auto; border-collapse: collapse; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+    <th colspan="3" style="padding: 15px; font-size: 18px; text-align: center;">Digital Circuit Design Dataset Structure</th>
+  </tr>
+  <tr>
+    <td rowspan="3" style="background: #2c3e50; color: white; text-align: center; vertical-align: middle; font-size: 16px; font-weight: bold; padding: 40px;">
+      🎯<br><strong>CENTER</strong><br><br>
+      Benchmark<br>Dataset<br>
+      <span style="font-size: 14px; color: #bdc3c7;">(11,726 total)</span>
+    </td>
+    <td style="background: #e3f2fd; padding: 12px; border: 2px solid #1976d2; text-align: center; font-weight: bold;">
+      🔵 <strong>Theory</strong><br><span style="font-size: 12px;">(436 samples)</span>
+    </td>
+    <td style="background: #bbdefb; padding: 8px; border: 1px solid #1976d2; font-size: 11px;">
+      • Theory Problems (436)
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #e8f5e8; padding: 12px; border: 2px solid #4caf50; text-align: center; font-weight: bold;">
+      🟢 <strong>Normal Calculation</strong><br><span style="font-size: 12px;">(4,090 samples)</span>
+    </td>
+    <td style="background: #c8e6c9; padding: 8px; border: 1px solid #4caf50; font-size: 11px;">
+      • Binary Calculator (100)<br>
+      • Number System Conversions (3,072)<br>
+      • Sign/Magnitude Number (312)<br>
+      • One's-complement (297)<br>
+      • Two's-complement (309)
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #fff3e0; padding: 12px; border: 2px solid #ff9800; text-align: center; font-weight: bold;">
+      🟠 <strong>Function Simplify</strong><br><span style="font-size: 12px;">(7,200 samples)</span>
+    </td>
+    <td style="background: #ffcc80; padding: 8px; border: 1px solid #ff9800; font-size: 11px;">
+      • 3-variable K-map (3,500)<br>
+      • 4-variable K-map (3,500)<br>
+      • 5-variable K-map (100)<br>
+      • 6-variable K-map (100)
+    </td>
+  </tr>
+</table>
+
+**📈 Distribution Overview:**
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#388E3C', 'lineColor': '#66BB6A', 'tertiaryColor': '#C8E6C9', 'background': '#F1F8E9', 'mainBkg': '#FFFFFF', 'cScale0': '#E3F2FD', 'cScale1': '#4CAF50', 'cScale2': '#FF9800'}}}%%
+pie title Dataset Distribution by Main Categories
+    "Function Simplify : 7,200 (61.4%)" : 7200
+    "Normal Calculation : 4,090 (34.9%)" : 4090  
+    "Theory : 436 (3.7%)" : 436
+```
+
 </div>
 
 **Dataset Hierarchy:**
