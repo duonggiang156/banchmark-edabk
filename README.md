@@ -268,32 +268,62 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
 #### 📊 Digital Circuit Design Dataset Structure
 
-**Main Categories Distribution:**
+<div align="center">
+  <div id="sunburst-chart" style="width:100%; height:600px;">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+      var data = [{
+        type: "sunburst",
+        ids: [
+          "Digital Circuit Design Dataset",
+          "Theory", "Normal Calculation", "Function Simplify",
+          "Theory Problems",
+          "Number System Conversions", "Two's-complement", "Sign/Magnitude", "One's-complement", "Binary Calculator",
+          "3-variable K-map", "4-variable K-map", "5-variable K-map", "6-variable K-map"
+        ],
+        labels: [
+          "Digital Circuit<br>Design Dataset<br>(11,726)",
+          "Theory<br>(436)", "Normal<br>Calculation<br>(4,090)", "Function<br>Simplify<br>(7,200)",
+          "Theory Problems<br>(436)",
+          "Number System<br>Conversions<br>(3,072)", "Two's-complement<br>(309)", "Sign/Magnitude<br>(312)", "One's-complement<br>(297)", "Binary Calculator<br>(100)",
+          "3-variable<br>K-map<br>(3,500)", "4-variable<br>K-map<br>(3,500)", "5-variable<br>K-map<br>(100)", "6-variable<br>K-map<br>(100)"
+        ],
+        parents: [
+          "",
+          "Digital Circuit Design Dataset", "Digital Circuit Design Dataset", "Digital Circuit Design Dataset",
+          "Theory",
+          "Normal Calculation", "Normal Calculation", "Normal Calculation", "Normal Calculation", "Normal Calculation",
+          "Function Simplify", "Function Simplify", "Function Simplify", "Function Simplify"
+        ],
+        values: [
+          11726,
+          436, 4090, 7200,
+          436,
+          3072, 309, 312, 297, 100,
+          3500, 3500, 100, 100
+        ],
+        maxdepth: 3,
+        branchvalues: "total"
+      }];
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#388E3C', 'lineColor': '#66BB6A', 'tertiaryColor': '#C8E6C9', 'background': '#F1F8E9', 'mainBkg': '#FFFFFF', 'cScale0': '#4CAF50', 'cScale1': '#2196F3', 'cScale2': '#FF9800'}}}%%
-pie title Dataset Distribution by Main Categories
-    "Function Simplify : 7,200 (61.4%)" : 7200
-    "Normal Calculation : 4,090 (34.9%)" : 4090  
-    "Theory : 436 (3.7%)" : 436
-```
+      var layout = {
+        title: {
+          text: "Digital Circuit Design Dataset Structure",
+          font: { size: 20, color: "#2C3E50" }
+        },
+        font: { size: 12, family: "Arial, sans-serif" },
+        margin: { t: 60, b: 40, l: 40, r: 40 },
+        sunburstcolorway: [
+          "#E3F2FD", "#1976D2", "#4CAF50", "#FF9800", 
+          "#B39DDB", "#81C784", "#FFB74D", "#90CAF9",
+          "#A5D6A7", "#FFCC02", "#CE93D8", "#FFAB91"
+        ]
+      };
 
-**Detailed Problem Types Breakdown:**
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#FF9800', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#F57C00', 'lineColor': '#FFB74D', 'tertiaryColor': '#FFE0B2', 'background': '#FFF8E1', 'mainBkg': '#FFFFFF'}}}%%
-pie title Detailed Problem Types (11,726 total samples)
-    "Number System Conversions : 3,072" : 3072
-    "4-variable K-map : 3,500" : 3500
-    "3-variable K-map : 3,500" : 3500
-    "Theory Problems : 436" : 436
-    "Sign/Magnitude : 312" : 312
-    "Two's-complement : 309" : 309
-    "One's-complement : 297" : 297
-    "Binary Calculator : 100" : 100
-    "5-variable K-map : 100" : 100
-    "6-variable K-map : 100" : 100
-```
+      Plotly.newPlot('sunburst-chart', data, layout, {responsive: true});
+    </script>
+  </div>
+</div>
 
 **Dataset Hierarchy:**
 - **🎯 Center**: Benchmark Dataset (11,726 total samples)
