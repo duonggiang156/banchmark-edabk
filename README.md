@@ -1,7 +1,7 @@
 # edabk-ic-design-dataset
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/your-repo/edabk-ic-design-dataset/main/images/edabk-logo.png" alt="EDA-BK Laboratory" width="300"/>
+  <img src="https://github.com/duonggiang156/benchmark-edabk/blob/master/images/logo_edabk.jpg" alt="EDABK Laboratory" width="300"/>
 </div>
 
 A comprehensive benchmark dataset and Python package for digital circuit design (Digital IC Design)
