@@ -272,48 +272,40 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
 ### 🌟 **Sunburst Chart - 3 Concentric Rings**
 
-![Digital Circuit Dataset Sunburst](https://quickchart.io/chart?c={
-  type: 'outlabeledPie',
-  data: {
-    datasets: [{
-      backgroundColor: ['#E3F2FD', '#4CAF50', '#2196F3', '#FF9800', '#9C27B0', '#E91E63', '#F44336', '#FF5722', '#795548', '#607D8B'],
-      data: [436, 3072, 309, 312, 297, 100, 3500, 3500, 100, 100],
-      borderWidth: 2,
-      borderColor: '#fff'
-    }],
-    labels: [
-      'Theory (436)',
-      'Number System Conversions (3,072)', 
-      'Two\'s-complement (309)',
-      'Sign/Magnitude (312)',
-      'One\'s-complement (297)',
-      'Binary Calculator (100)',
-      '3-variable K-map (3,500)',
-      '4-variable K-map (3,500)', 
-      '5-variable K-map (100)',
-      '6-variable K-map (100)'
-    ]
-  },
-  options: {
-    plugins: {
-      legend: {
-        display: false
-      },
-      title: {
-        display: true,
-        text: 'Digital Circuit Design Dataset Structure (11,726 samples)',
-        font: { size: 16, weight: 'bold' },
-        color: '#2C3E50'
-      },
-      outlabels: {
-        text: '%l: %v',
-        color: '#2C3E50',
-        stretch: 25,
-        font: { size: 10, weight: 'bold' }
-      }
-    }
-  }
-})
+![Digital Circuit Dataset Structure](https://quickchart.io/chart?width=600&height=400&c=%7Btype%3A%27doughnut%27%2Cdata%3A%7Blabels%3A%5B%27Theory%20%28436%29%27%2C%27Number%20System%20%283072%29%27%2C%27Two%27s-complement%20%28309%29%27%2C%27Sign%2FMagnitude%20%28312%29%27%2C%27One%27s-complement%20%28297%29%27%2C%27Binary%20Calculator%20%28100%29%27%2C%273-variable%20K-map%20%283500%29%27%2C%274-variable%20K-map%20%283500%29%27%2C%275-variable%20%28100%29%27%2C%276-variable%20%28100%29%27%5D%2Cdatasets%3A%5B%7Bdata%3A%5B436%2C3072%2C309%2C312%2C297%2C100%2C3500%2C3500%2C100%2C100%5D%2CbackgroundColor%3A%5B%27%23E3F2FD%27%2C%27%234CAF50%27%2C%27%232196F3%27%2C%27%23FF9800%27%2C%27%239C27B0%27%2C%27%23E91E63%27%2C%27%23F44336%27%2C%27%23FF5722%27%2C%27%23795548%27%2C%27%23607D8B%27%5D%2CborderWidth%3A2%7D%5D%7D%2Coptions%3A%7Bresponsive%3Atrue%2Cplugins%3A%7Btitle%3A%7Bdisplay%3Atrue%2Ctext%3A%27Digital%20Circuit%20Design%20Dataset%20Structure%20%2811%2C726%29%27%7D%2Clegend%3A%7Bposition%3A%27bottom%27%7D%7D%7D%7D)
+
+**🎯 Multi-Layer Visualization:**
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#388E3C', 'lineColor': '#66BB6A', 'tertiaryColor': '#C8E6C9', 'background': '#F1F8E9', 'mainBkg': '#FFFFFF', 'cScale0': '#E3F2FD', 'cScale1': '#4CAF50', 'cScale2': '#FF9800'}}}%%
+pie title "Main Categories (11,726 total)"
+    "Function Simplify : 7,200" : 7200
+    "Normal Calculation : 4,090" : 4090  
+    "Theory : 436" : 436
+```
+
+**Normal Calculation Breakdown (4,090 samples):**
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#4CAF50', 'lineColor': '#81C784', 'tertiaryColor': '#C8E6C9', 'background': '#E8F5E8', 'mainBkg': '#FFFFFF'}}}%%
+pie title "Normal Calculation Types"
+    "Number System Conversions : 3,072" : 3072
+    "Two's-complement : 309" : 309
+    "Sign/Magnitude : 312" : 312
+    "One's-complement : 297" : 297
+    "Binary Calculator : 100" : 100
+```
+
+**Function Simplify Breakdown (7,200 samples):**
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#FF9800', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#FF9800', 'lineColor': '#FFB74D', 'tertiaryColor': '#FFE0B2', 'background': '#FFF3E0', 'mainBkg': '#FFFFFF'}}}%%
+pie title "Function Simplify Types"
+    "3-variable K-map : 3,500" : 3500
+    "4-variable K-map : 3,500" : 3500
+    "5-variable K-map : 100" : 100
+    "6-variable K-map : 100" : 100
+```
 
 **🎯 3-Layer Structure:**
 
