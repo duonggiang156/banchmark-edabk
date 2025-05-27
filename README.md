@@ -1,5 +1,3 @@
-## 🎓 edabk-id-design-dataset
-
 <div align="center">
   <img src="https://github.com/duonggiang156/benchmark-edabk/blob/master/images/logo_edabk.jpg" alt="EDA-BK Laboratory" width="300"/>
 </div>
@@ -27,19 +25,8 @@ This project addresses critical gaps in digital circuit design education and AI 
 
 Our integrated approach provides automated evaluation frameworks, customizable benchmarks, and intelligent preprocessing capabilities that accelerate both learning and research in digital circuit design.
 
-## 1. Overview
 
-### 📦 Package Overview
-**digitalcircuit** is a powerful Python library that provides instant solutions for digital circuit design problems. Simply install via `pip install digitalcircuit` and access comprehensive tools for Karnaugh map optimization, number system conversions, and binary arithmetic operations.
-
-### 📊 Benchmark Framework  
-Our standardized evaluation suite enables systematic comparison of AI/LLM performance across multiple complexity levels, from basic calculations to advanced circuit optimization tasks.
-
-### 🗃️ Dataset Collection
-A meticulously curated collection of 11,700+ problems spanning four difficulty levels, designed to support both educational applications and cutting-edge AI research in digital circuit design.
-
-
-## 2. Package
+## 1. Package
 
 ### 🔗 Installation & Access
 
@@ -52,31 +39,8 @@ pip install digitalcircuit
 
 **🌐 Package Repository:** [https://pypi.org/project/digitalcircuit/](https://pypi.org/project/digitalcircuit/)
 
-### ⚡ Key Features
 
-- **🗺️ Karnaugh Map Solver**: Automatic minimization for 3-4 variable Boolean functions
-- **🔢 Number System Converter**: Seamless conversion between binary, decimal, octal, and hexadecimal
-- **⚙️ Binary Arithmetic**: Complete suite for binary calculations, complements, and signed numbers
-- **🧮 Logic Operations**: Boolean algebra simplification and truth table generation
-- **📊 Circuit Analysis**: Basic combinational and sequential circuit evaluation
-
-### 🚀 Quick Start Example
-
-```python
-from digitalcircuit import KarnaughMap, NumberConverter
-
-# Karnaugh Map Minimization
-kmap = KarnaughMap(variables=3)
-result = kmap.minimize([0, 1, 3, 7])
-print(f"Minimized expression: {result.expression}")
-
-# Number System Conversion  
-converter = NumberConverter()
-binary_result = converter.decimal_to_binary(255)
-print(f"255 in binary: {binary_result}")
-```
-
-## 3. Current Benchmark Results
+## 2. Current Benchmark Results
 
 ### 🏆 Key Performance Insights
 
@@ -92,20 +56,13 @@ xychart-beta
     bar [93.6, 84.7, 84.5, 76.5]
 ```
 
-**Performance Analysis:**
-- 🥇 **Our Package leads** with 93.6% accuracy
-- 📈 **+10.5% improvement** over best LLM (Claude-3.5)
-- ⚡ **Fastest response time** at 0.8 seconds
-- 🎯 **Consistent performance** across all problem categories
-
-
 ## 🎯 Benchmark Goals
 
 - Provide a standardized, easy-to-use dataset for digital circuit design problems.
 - Support evaluation and comparison of AI/LLM models in digital electronics.
 - Enable expansion, contribution, and reuse of data within the research community.
 
-## 4. Data Scale
+## 3. Data Scale
 
 #### 📊 Digital Circuit Design Dataset Structure
 
@@ -115,7 +72,7 @@ xychart-beta
 
 </div>
 
-## 5. Usage Guide
+## 4. Usage Guide
 
 ### Environment
 - Python >= 3.8
@@ -133,115 +90,6 @@ pip install -r requirements.txt
 
 # Install the package
 pip install -e .
-```
-
-### 📊 Running Benchmark Evaluation
-
-#### Example 1: Evaluate Your Model on Level 2 Dataset
-
-```python
-from edabk_benchmark import BenchmarkRunner, load_dataset
-
-# Load Level 2 dataset
-dataset = load_dataset("level2_calculations")
-print(f"Loaded {len(dataset)} calculation problems")
-
-# Initialize benchmark runner
-runner = BenchmarkRunner(
-    dataset=dataset,
-    model_name="your_model",
-    timeout=30  # seconds per question
-)
-
-# Run benchmark evaluation
-results = runner.evaluate_model(your_model_function)
-
-# Display results
-print(f"Overall Accuracy: {results.accuracy:.2f}%")
-print(f"Average Response Time: {results.avg_time:.2f}s")
-print(f"Breakdown by Problem Type:")
-for problem_type, accuracy in results.breakdown.items():
-    print(f"  {problem_type}: {accuracy:.2f}%")
-```
-
-#### Example 2: Compare Multiple Models
-
-```python
-from edabk_benchmark import ModelComparator
-
-# Initialize comparator
-comparator = ModelComparator()
-
-# Add models to compare
-comparator.add_model("GPT-4", gpt4_function)
-comparator.add_model("Claude-3.5", claude_function)
-comparator.add_model("Your Model", your_model_function)
-
-# Run comparison on all levels
-results = comparator.run_full_benchmark()
-
-# Generate comparison report
-comparator.generate_report(output_path="benchmark_results.html")
-```
-
-### 🛠️ Using the Package for Individual Questions
-
-#### Example 1: Number System Conversion
-
-```python
-from edabk_ic_design import DigitalCircuitSolver
-
-# Initialize solver
-solver = DigitalCircuitSolver()
-
-# Convert binary to decimal
-question = "Convert binary 1101011 to decimal"
-answer = solver.convert_number_system(
-    number="1101011",
-    from_base=2,
-    to_base=10
-)
-print(f"Answer: {answer}")  # Output: 107
-
-# Convert with verification
-result = solver.solve_with_steps(question)
-print(f"Step-by-step solution:\n{result.steps}")
-print(f"Final answer: {result.answer}")
-```
-
-#### Example 2: Karnaugh Map Minimization
-
-```python
-# Solve K-map minimization
-question = """
-Minimize the following Boolean function using K-map:
-F(A,B,C,D) = Σ(0,1,3,7,8,9,11,15)
-"""
-
-result = solver.minimize_kmap(
-    variables=['A', 'B', 'C', 'D'],
-    minterms=[0, 1, 3, 7, 8, 9, 11, 15]
-)
-
-print(f"Minimized expression: {result.expression}")
-print(f"K-map visualization:\n{result.kmap_display}")
-print(f"Number of literals reduced: {result.complexity_reduction}")
-```
-
-#### Example 3: Logic Circuit Analysis
-
-```python
-# Analyze logic circuit
-circuit_description = """
-Design a 3-bit binary adder circuit with carry output.
-Inputs: A2A1A0, B2B1B0
-Outputs: S2S1S0, Cout
-"""
-
-result = solver.design_circuit(circuit_description)
-print(f"Circuit design:\n{result.circuit_diagram}")
-print(f"Truth table:\n{result.truth_table}")
-print(f"Boolean expressions:\n{result.expressions}")
 ```
 
 ### 🔧 Advanced Usage
