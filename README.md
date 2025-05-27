@@ -1,4 +1,4 @@
-🎓 edabk-ic-design-dataset
+## 🎓 edabk-ic-design-dataset
 
 <div align="center">
   <img src="https://github.com/duonggiang156/benchmark-edabk/blob/master/images/logo_edabk.jpg" alt="EDA-BK Laboratory" width="300"/>
