@@ -268,72 +268,32 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
 #### 📊 Digital Circuit Design Dataset Structure
 
-<div align="center">
-  <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
-    <!-- Outer ring segments -->
-    <!-- Theory section -->
-    <path d="M 300 100 A 200 200 0 0 1 495 208" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
-    <text x="380" y="140" text-anchor="middle" font-size="10" font-weight="bold">Theory Problems</text>
-    <text x="380" y="155" text-anchor="middle" font-size="9">(436)</text>
-    
-    <!-- Normal Calculation sections -->
-    <path d="M 495 208 A 200 200 0 0 1 495 392" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
-    <text x="510" y="250" text-anchor="middle" font-size="9" transform="rotate(90 510 250)">Number System</text>
-    <text x="510" y="280" text-anchor="middle" font-size="9" transform="rotate(90 510 280)">Conversions (3,072)</text>
-    <text x="510" y="320" text-anchor="middle" font-size="9" transform="rotate(90 510 320)">Two's-complement (309)</text>
-    <text x="510" y="350" text-anchor="middle" font-size="9" transform="rotate(90 510 350)">Sign/Magnitude (312)</text>
-    
-    <path d="M 495 392 A 200 200 0 0 1 392 495" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
-    <text x="450" y="460" text-anchor="middle" font-size="9">One's-complement</text>
-    <text x="450" y="475" text-anchor="middle" font-size="9">(297)</text>
-    
-    <path d="M 392 495 A 200 200 0 0 1 208 495" fill="#FFEBF0" stroke="#E91E63" stroke-width="2"/>
-    <text x="300" y="510" text-anchor="middle" font-size="9">Binary Calculator (100)</text>
-    
-    <!-- Function Simplify sections -->
-    <path d="M 208 495 A 200 200 0 0 1 105 392" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
-    <text x="150" y="460" text-anchor="middle" font-size="9">3-variable kmap</text>
-    <text x="150" y="475" text-anchor="middle" font-size="9">(3,500)</text>
-    
-    <path d="M 105 392 A 200 200 0 0 1 105 208" fill="#FFEBEE" stroke="#F44336" stroke-width="2"/>
-    <text x="90" y="250" text-anchor="middle" font-size="9" transform="rotate(-90 90 250)">4-variable kmap</text>
-    <text x="90" y="280" text-anchor="middle" font-size="9" transform="rotate(-90 90 280)">(3,500)</text>
-    <text x="90" y="320" text-anchor="middle" font-size="9" transform="rotate(-90 90 320)">5-variable (100)</text>
-    <text x="90" y="350" text-anchor="middle" font-size="9" transform="rotate(-90 90 350)">6-variable (100)</text>
-    
-    <path d="M 105 208 A 200 200 0 0 1 300 100" fill="#E0F2F1" stroke="#00796B" stroke-width="2"/>
-    
-    <!-- Middle ring -->
-    <!-- Theory -->
-    <path d="M 300 150 A 150 150 0 0 1 430 225" fill="#B39DDB" stroke="#673AB7" stroke-width="3"/>
-    <text x="370" y="185" text-anchor="middle" font-size="12" font-weight="bold">Theory</text>
-    <text x="370" y="200" text-anchor="middle" font-size="11">(436)</text>
-    
-    <!-- Normal Calculation -->
-    <path d="M 430 225 A 150 150 0 0 1 430 375" fill="#81C784" stroke="#4CAF50" stroke-width="3"/>
-    <text x="445" y="290" text-anchor="middle" font-size="12" font-weight="bold" transform="rotate(90 445 290)">Normal</text>
-    <text x="445" y="310" text-anchor="middle" font-size="12" font-weight="bold" transform="rotate(90 445 310)">Calculation</text>
-    <text x="445" y="330" text-anchor="middle" font-size="11" transform="rotate(90 445 330)">(4,090)</text>
-    
-    <!-- Function Simplify -->
-    <path d="M 430 375 A 150 150 0 1 1 300 150" fill="#FFB74D" stroke="#FF9800" stroke-width="3"/>
-    <text x="240" y="380" text-anchor="middle" font-size="12" font-weight="bold">Function</text>
-    <text x="240" y="395" text-anchor="middle" font-size="12" font-weight="bold">Simplify</text>
-    <text x="240" y="410" text-anchor="middle" font-size="11">(7,200)</text>
-    
-    <!-- Center circle -->
-    <circle cx="300" cy="300" r="80" fill="#2C3E50" stroke="#34495E" stroke-width="4"/>
-    <text x="300" y="285" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Benchmark</text>
-    <text x="300" y="305" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Dataset</text>
-    <text x="300" y="325" text-anchor="middle" font-size="12" fill="white">(11,726)</text>
-    
-    <!-- Connecting lines -->
-    <line x1="300" y1="380" x2="300" y2="450" stroke="#666" stroke-width="1" opacity="0.3"/>
-    <line x1="220" y1="220" x2="150" y2="150" stroke="#666" stroke-width="1" opacity="0.3"/>
-    <line x1="380" y1="220" x2="450" y2="150" stroke="#666" stroke-width="1" opacity="0.3"/>
-    <line x1="380" y1="380" x2="450" y2="450" stroke="#666" stroke-width="1" opacity="0.3"/>
-  </svg>
-</div>
+**Main Categories Distribution:**
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#388E3C', 'lineColor': '#66BB6A', 'tertiaryColor': '#C8E6C9', 'background': '#F1F8E9', 'mainBkg': '#FFFFFF', 'cScale0': '#4CAF50', 'cScale1': '#2196F3', 'cScale2': '#FF9800'}}}%%
+pie title Dataset Distribution by Main Categories
+    "Function Simplify : 7,200 (61.4%)" : 7200
+    "Normal Calculation : 4,090 (34.9%)" : 4090  
+    "Theory : 436 (3.7%)" : 436
+```
+
+**Detailed Problem Types Breakdown:**
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#FF9800', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#F57C00', 'lineColor': '#FFB74D', 'tertiaryColor': '#FFE0B2', 'background': '#FFF8E1', 'mainBkg': '#FFFFFF'}}}%%
+pie title Detailed Problem Types (11,726 total samples)
+    "Number System Conversions : 3,072" : 3072
+    "4-variable K-map : 3,500" : 3500
+    "3-variable K-map : 3,500" : 3500
+    "Theory Problems : 436" : 436
+    "Sign/Magnitude : 312" : 312
+    "Two's-complement : 309" : 309
+    "One's-complement : 297" : 297
+    "Binary Calculator : 100" : 100
+    "5-variable K-map : 100" : 100
+    "6-variable K-map : 100" : 100
+```
 
 **Dataset Hierarchy:**
 - **🎯 Center**: Benchmark Dataset (11,726 total samples)
