@@ -38,64 +38,6 @@ Our standardized evaluation suite enables systematic comparison of AI/LLM perfor
 ### 🗃️ Dataset Collection
 A meticulously curated collection of 11,700+ problems spanning four difficulty levels, designed to support both educational applications and cutting-edge AI research in digital circuit design.
 
-<div align="center">
-<table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
-    <thead>
-        <tr style="background-color: #009879; color: #ffffff; text-align: left;">
-            <th style="padding: 12px 15px;">Level</th>
-            <th style="padding: 12px 15px;">Description</th>
-            <th style="padding: 12px 15px;">Topics</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 1: Basic Theory</strong></td>
-            <td style="padding: 12px 15px;">Foundational knowledge and concepts</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Definitions and fundamental concepts</li>
-                    <li>Steps to design a digital circuit</li>
-                    <li>Circuit optimization process</li>
-                    <li>Circuit verification methods</li>
-                </ul>
-            </td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 2: Basic Calculations</strong></td>
-            <td style="padding: 12px 15px;">Essential numerical operations</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Binary to decimal conversion</li>
-                    <li>Binary arithmetic</li>
-                    <li>Basic logic calculations</li>
-                </ul>
-            </td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 3: Minimization and Proof</strong></td>
-            <td style="padding: 12px 15px;">Advanced logic operations</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Logic function minimization</li>
-                    <li>Formula proof</li>
-                    <li>Applying theory to practical problems</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 12px 15px; background-color: #f3f3f3;"><strong>Level 4: Circuit Implementation</strong></td>
-            <td style="padding: 12px 15px;">Practical circuit design</td>
-            <td style="padding: 12px 15px;">
-                <ul style="margin: 0; padding-left: 20px;">
-                    <li>Converting formulas to circuits</li>
-                    <li>Designing circuits from specifications</li>
-                    <li>Circuit structure optimization</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
-</div>
 
 ## 2. Package
 
@@ -135,57 +77,6 @@ print(f"255 in binary: {binary_result}")
 ```
 
 ## 3. Current Benchmark Results
-
-### ⚡ Performance Comparison Across Different Models
-
-<div align="center">
-<table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
-    <thead>
-        <tr style="background-color: #2C3E50; color: #ffffff; text-align: center;">
-            <th style="padding: 12px 15px;">Model</th>
-            <th style="padding: 12px 15px;">Level 1<br/>Theory (%)</th>
-            <th style="padding: 12px 15px;">Level 2<br/>Calculations (%)</th>
-            <th style="padding: 12px 15px;">Level 3<br/>K-Maps (%)</th>
-            <th style="padding: 12px 15px;">Overall<br/>Score (%)</th>
-            <th style="padding: 12px 15px;">Avg Response<br/>Time (s)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f8f9fa; font-weight: bold;">Our Package</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d1ecf1;">94.8</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d1ecf1;">96.2</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d4edda;">89.7</td>
-            <td style="padding: 12px 15px; text-align: center; font-weight: bold; background-color: #d1ecf1;">93.6</td>
-            <td style="padding: 12px 15px; text-align: center;">0.8</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f8f9fa; font-weight: bold;">Claude-3.5</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d4edda;">89.1</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d4edda;">88.7</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #fff3cd;">76.2</td>
-            <td style="padding: 12px 15px; text-align: center; font-weight: bold;">84.7</td>
-            <td style="padding: 12px 15px; text-align: center;">1.9</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f8f9fa; font-weight: bold;">GPT-4</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d4edda;">87.2</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d4edda;">92.5</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #fff3cd;">73.8</td>
-            <td style="padding: 12px 15px; text-align: center; font-weight: bold;">84.5</td>
-            <td style="padding: 12px 15px; text-align: center;">2.3</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f8f9fa; font-weight: bold;">Gemini Pro</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #fff3cd;">78.4</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #d4edda;">85.9</td>
-            <td style="padding: 12px 15px; text-align: center; background-color: #f8d7da;">65.3</td>
-            <td style="padding: 12px 15px; text-align: center; font-weight: bold;">76.5</td>
-            <td style="padding: 12px 15px; text-align: center;">1.7</td>
-        </tr>
-    </tbody>
-</table>
-</div>
 
 ### 🏆 Key Performance Insights
 
