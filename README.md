@@ -1,10 +1,8 @@
-# edabk-ic-design-dataset
+#🎓 edabk-ic-design-dataset
 
 <div align="center">
   <img src="https://github.com/duonggiang156/benchmark-edabk/blob/master/images/logo_edabk.jpg" alt="EDA-BK Laboratory" width="300"/>
 </div>
-
-A comprehensive benchmark dataset and Python package for digital circuit design (Digital IC Design)
 
 ## 🚀 Introduction
 
@@ -136,7 +134,7 @@ print(f"255 in binary: {binary_result}")
 
 ## 3. Current Benchmark Results
 
-### Performance Comparison Across Different Models
+### ⚡ Performance Comparison Across Different Models
 
 <table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
     <thead>
@@ -202,69 +200,14 @@ xychart-beta
 - ⚡ **Fastest response time** at 0.8 seconds
 - 🎯 **Consistent performance** across all problem categories
 
-### 📋 Detailed Breakdown
 
-<details>
-<summary><strong>Level 2: Normal Calculation (4,090 samples)</strong></summary>
+## 🎯 Benchmark Goals
 
-| Problem Type | Count | Percentage |
-|--------------|-------|------------|
-| Number system conversions | 3,072 | 75% |
-| Two's-complement | 309 | 8% |
-| Sign/Magnitude Number | 312 | 8% |
-| One's-complement | 297 | 7% |
-| Binary Calculator | 100 | 2% |
-
-</details>
-
-<details>
-<summary><strong>Level 3: Karnaugh Maps (7,200 samples)</strong></summary>
-
-| K-map Type | Count | Percentage |
-|------------|-------|------------|
-| 3-variable kmap | 3,500 | 48.6% |
-| 4-variable kmap | 3,500 | 48.6% |
-| 5-variable kmap | 100 | 1.4% |
-| 6-variable kmap | 100 | 1.4% |
-
-</details>
+- Provide a standardized, easy-to-use dataset for digital circuit design problems.
+- Support evaluation and comparison of AI/LLM models in digital electronics.
+- Enable expansion, contribution, and reuse of data within the research community.
 
 ## 4. Data Scale
-
-The dataset is divided into 3 main groups corresponding to the first 3 levels:
-
-<table style="width:100%; border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);">
-    <thead>
-        <tr style="background-color: #009879; color: #ffffff; text-align: left;">
-            <th style="padding: 12px 15px;">Level</th>
-            <th style="padding: 12px 15px;">Name</th>
-            <th style="padding: 12px 15px;">Quantity</th>
-            <th style="padding: 12px 15px;">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3; text-align: center;"><strong>1</strong></td>
-            <td style="padding: 12px 15px;">Basic Theory</td>
-            <td style="padding: 12px 15px; text-align: center;"><strong>436</strong></td>
-            <td style="padding: 12px 15px;">Comprehensive theory questions covering all key topics in digital electronics</td>
-        </tr>
-        <tr style="border-bottom: 1px solid #dddddd;">
-            <td style="padding: 12px 15px; background-color: #f3f3f3; text-align: center;"><strong>2</strong></td>
-            <td style="padding: 12px 15px;">Basic Calculations</td>
-            <td style="padding: 12px 15px; text-align: center;"><strong>4090</strong></td>
-            <td style="padding: 12px 15px;">Mainly number system conversions, binary arithmetic, signed numbers, complements</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px 15px; background-color: #f3f3f3; text-align: center;"><strong>3</strong></td>
-            <td style="padding: 12px 15px;">Function Minimization / Karnaugh Map</td>
-            <td style="padding: 12px 15px; text-align: center;"><strong>7200</strong></td>
-            <td style="padding: 12px 15px;">Logic function minimization problems with 3, 4, 5, 6-variable K-maps</td>
-        </tr>
-    </tbody>
-</table>
-
-### Dataset Visualization
 
 #### 📊 Digital Circuit Design Dataset Structure
 
@@ -514,12 +457,6 @@ results = solver.batch_solve(questions, parallel=True)
 for i, result in enumerate(results):
     print(f"Q{i+1}: {result.answer}")
 ```
-
-## 🎯 Benchmark Goals
-
-- Provide a standardized, easy-to-use dataset for digital circuit design problems.
-- Support evaluation and comparison of AI/LLM models in digital electronics.
-- Enable expansion, contribution, and reuse of data within the research community.
 
 ## 🔮 Future Development Roadmap
 
