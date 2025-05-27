@@ -270,59 +270,72 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
 <div align="center">
 
-### 🌟 **Sunburst Visualization - 3 Concentric Rings**
+### 🌟 **Sunburst Chart - 3 Concentric Rings**
 
-<table style="width:80%; margin: 20px auto; border-collapse: collapse; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-    <th colspan="3" style="padding: 15px; font-size: 18px; text-align: center;">Digital Circuit Design Dataset Structure</th>
-  </tr>
-  <tr>
-    <td rowspan="3" style="background: #2c3e50; color: white; text-align: center; vertical-align: middle; font-size: 16px; font-weight: bold; padding: 40px;">
-      🎯<br><strong>CENTER</strong><br><br>
-      Benchmark<br>Dataset<br>
-      <span style="font-size: 14px; color: #bdc3c7;">(11,726 total)</span>
-    </td>
-    <td style="background: #e3f2fd; padding: 12px; border: 2px solid #1976d2; text-align: center; font-weight: bold;">
-      🔵 <strong>Theory</strong><br><span style="font-size: 12px;">(436 samples)</span>
-    </td>
-    <td style="background: #bbdefb; padding: 8px; border: 1px solid #1976d2; font-size: 11px;">
-      • Theory Problems (436)
-    </td>
-  </tr>
-  <tr>
-    <td style="background: #e8f5e8; padding: 12px; border: 2px solid #4caf50; text-align: center; font-weight: bold;">
-      🟢 <strong>Normal Calculation</strong><br><span style="font-size: 12px;">(4,090 samples)</span>
-    </td>
-    <td style="background: #c8e6c9; padding: 8px; border: 1px solid #4caf50; font-size: 11px;">
-      • Binary Calculator (100)<br>
-      • Number System Conversions (3,072)<br>
-      • Sign/Magnitude Number (312)<br>
-      • One's-complement (297)<br>
-      • Two's-complement (309)
-    </td>
-  </tr>
-  <tr>
-    <td style="background: #fff3e0; padding: 12px; border: 2px solid #ff9800; text-align: center; font-weight: bold;">
-      🟠 <strong>Function Simplify</strong><br><span style="font-size: 12px;">(7,200 samples)</span>
-    </td>
-    <td style="background: #ffcc80; padding: 8px; border: 1px solid #ff9800; font-size: 11px;">
-      • 3-variable K-map (3,500)<br>
-      • 4-variable K-map (3,500)<br>
-      • 5-variable K-map (100)<br>
-      • 6-variable K-map (100)
-    </td>
-  </tr>
-</table>
+![Digital Circuit Dataset Sunburst](https://quickchart.io/chart?c={
+  type: 'outlabeledPie',
+  data: {
+    datasets: [{
+      backgroundColor: ['#E3F2FD', '#4CAF50', '#2196F3', '#FF9800', '#9C27B0', '#E91E63', '#F44336', '#FF5722', '#795548', '#607D8B'],
+      data: [436, 3072, 309, 312, 297, 100, 3500, 3500, 100, 100],
+      borderWidth: 2,
+      borderColor: '#fff'
+    }],
+    labels: [
+      'Theory (436)',
+      'Number System Conversions (3,072)', 
+      'Two\'s-complement (309)',
+      'Sign/Magnitude (312)',
+      'One\'s-complement (297)',
+      'Binary Calculator (100)',
+      '3-variable K-map (3,500)',
+      '4-variable K-map (3,500)', 
+      '5-variable K-map (100)',
+      '6-variable K-map (100)'
+    ]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: 'Digital Circuit Design Dataset Structure (11,726 samples)',
+        font: { size: 16, weight: 'bold' },
+        color: '#2C3E50'
+      },
+      outlabels: {
+        text: '%l: %v',
+        color: '#2C3E50',
+        stretch: 25,
+        font: { size: 10, weight: 'bold' }
+      }
+    }
+  }
+})
 
-**📈 Distribution Overview:**
+**🎯 3-Layer Structure:**
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#388E3C', 'lineColor': '#66BB6A', 'tertiaryColor': '#C8E6C9', 'background': '#F1F8E9', 'mainBkg': '#FFFFFF', 'cScale0': '#E3F2FD', 'cScale1': '#4CAF50', 'cScale2': '#FF9800'}}}%%
-pie title Dataset Distribution by Main Categories
-    "Function Simplify : 7,200 (61.4%)" : 7200
-    "Normal Calculation : 4,090 (34.9%)" : 4090  
-    "Theory : 436 (3.7%)" : 436
-```
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+  <div style="text-align: center; margin: 0 30px;">
+    <div style="width: 80px; height: 80px; border-radius: 50%; background: #2C3E50; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 10px;">CENTER</div>
+    <small>Benchmark<br>(11,726)</small>
+  </div>
+  <div style="text-align: center; margin: 0 30px;">
+    <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(120deg, #E3F2FD 33%, #4CAF50 33%, #4CAF50 66%, #FF9800 66%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 10px;">RING 1</div>
+    <small>3 Categories</small>
+  </div>
+  <div style="text-align: center; margin: 0 30px;">
+    <div style="width: 160px; height: 160px; border-radius: 50%; background: conic-gradient(#E3F2FD 30deg, #4CAF50 30deg, #4CAF50 120deg, #2196F3 120deg, #FF9800 180deg, #9C27B0 240deg, #E91E63 270deg, #F44336 300deg, #FF5722 330deg, #795548 350deg, #607D8B 360deg); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 10px;">RING 2</div>
+    <small>10 Problem Types</small>
+  </div>
+</div>
+
+**📊 Category Breakdown:**
+- 🔵 **Theory** (436): Theory Problems
+- 🟢 **Normal Calculation** (4,090): Number System Conversions (3,072), Two's-complement (309), Sign/Magnitude (312), One's-complement (297), Binary Calculator (100)  
+- 🟠 **Function Simplify** (7,200): 3-variable K-map (3,500), 4-variable K-map (3,500), 5-variable K-map (100), 6-variable K-map (100)
 
 </div>
 
