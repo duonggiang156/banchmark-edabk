@@ -115,16 +115,6 @@ xychart-beta
 
 </div>
 
-**📊 Category Breakdown:**
-- 🔵 **Theory** (436): Theory Problems
-- 🟢 **Normal Calculation** (4,090): Number System Conversions (3,072), Two's-complement (309), Sign/Magnitude (312), One's-complement (297), Binary Calculator (100)  
-- 🟠 **Function Simplify** (7,200): 3-variable K-map (3,500), 4-variable K-map (3,500), 5-variable K-map (100), 6-variable K-map (100)
-
-**Dataset Hierarchy:**
-- **🎯 Center**: Benchmark Dataset (11,726 total samples)
-- **🔵 Level 1**: 3 main categories - Theory (436), Normal Calculation (4,090), Function Simplify (7,200)  
-- **🔷 Level 2**: 10 specific problem types with detailed sample counts
-
 ## 5. Usage Guide
 
 ### Environment
