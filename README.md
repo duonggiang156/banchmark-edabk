@@ -192,7 +192,40 @@ xychart-beta
     bar [93.6, 84.7, 84.5, 76.5]
 ```
 
+**Performance Summary:**
+- 🥇 **Our Package**: 93.6% (Best Performance)
+- 🥈 **Claude-3.5**: 84.7% (+10.5% improvement needed)
+- 🥉 **GPT-4**: 84.5% (+10.8% improvement needed)  
+- 📊 **Gemini Pro**: 76.5% (+22.4% improvement needed)
+
 **Performance Improvement**: Our Package achieves **+10.5%** better overall performance than the best LLM (Claude-3.5: 84.7% vs Our Package: 93.6%)
+
+### 📋 Detailed Breakdown
+
+<details>
+<summary><strong>Level 2: Normal Calculation (4,090 samples)</strong></summary>
+
+| Problem Type | Count | Percentage |
+|--------------|-------|------------|
+| Number system conversions | 3,072 | 75% |
+| Two's-complement | 309 | 8% |
+| Sign/Magnitude Number | 312 | 8% |
+| One's-complement | 297 | 7% |
+| Binary Calculator | 100 | 2% |
+
+</details>
+
+<details>
+<summary><strong>Level 3: Karnaugh Maps (7,200 samples)</strong></summary>
+
+| K-map Type | Count | Percentage |
+|------------|-------|------------|
+| 3-variable kmap | 3,500 | 48.6% |
+| 4-variable kmap | 3,500 | 48.6% |
+| 5-variable kmap | 100 | 1.4% |
+| 6-variable kmap | 100 | 1.4% |
+
+</details>
 
 ## 4. Data Scale
 
@@ -231,58 +264,46 @@ The dataset is divided into 3 main groups corresponding to the first 3 levels:
 
 ### Dataset Visualization
 
-#### 📊 Total Data Distribution
+#### 📊 Digital Circuit Design Dataset Classification
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'pie1': '#4A90E2', 'pie2': '#27AE60', 'pie3': '#E67E22', 'pieLegendTextColor': '#2C3E50', 'pieTitleTextColor': '#2C3E50'}}}%%
-pie title Total Dataset Distribution
-    "Function Simplify (7,200)" : 7200
-    "Normal Calculation (4,090)" : 4090
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#87CEEB', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#4682B4', 'lineColor': '#B0C4DE', 'secondaryColor': '#ADD8E6', 'tertiaryColor': '#E0F6FF', 'background': '#F0F8FF', 'mainBkg': '#FFFFFF'}}}%%
+pie title Digital Circuit Design Dataset
     "Theory (436)" : 436
+    "Number System Conversions (3072)" : 3072
+    "Two's Complement (309)" : 309
+    "Sign/Magnitude (312)" : 312
+    "One's Complement (297)" : 297
+    "Binary Calculator (100)" : 100
+    "3-variable K-map (3500)" : 3500
+    "4-variable K-map (3500)" : 3500
+    "5-variable K-map (100)" : 100
+    "6-variable K-map (100)" : 100
 ```
 
-#### 📈 Problem Type Distribution
+**Dataset Structure:**
+- **Inner Circle**: Main Categories (Theory, Calculations, K-Maps)
+- **Outer Circle**: Specific Problem Types with quantities
+- **Total**: 11,726 samples across all levels
+
+### 🏆 Key Performance Insights
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'pie1': '#1f77b4', 'pie2': '#ff7f0e', 'pie3': '#2ca02c', 'pie4': '#d62728', 'pie5': '#9467bd', 'pie6': '#8c564b', 'pie7': '#e377c2', 'pie8': '#7f7f7f', 'pie9': '#bcbd22'}}}%%
-pie title Level 2 & 3 Problem Distribution
-    "Number system conversions (3,072)" : 3072
-    "3-variable kmap (3,500)" : 3500
-    "4-variable kmap (3,500)" : 3500
-    "Sign/Magnitude Number (312)" : 312
-    "Two's-complement (309)" : 309
-    "One's-complement (297)" : 297
-    "5-variable kmap (100)" : 100
-    "6-variable kmap (100)" : 100
-    "Binary Calculator (100)" : 100
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#E67E22', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#D35400', 'lineColor': '#BDC3C7', 'secondaryColor': '#3498DB', 'tertiaryColor': '#95A5A6', 'background': '#ECF0F1', 'mainBkg': '#FFFFFF'}}}%%
+xychart-beta
+    title "Digital Circuit Design Benchmark Results"
+    x-axis [Our_Package, Claude_3.5, GPT_4, Gemini_Pro]
+    y-axis "Accuracy (%)" 0 --> 100
+    bar [93.6, 84.7, 84.5, 76.5]
 ```
 
-### 📋 Detailed Breakdown
+**Performance Summary:**
+- 🥇 **Our Package**: 93.6% (Best Performance)
+- 🥈 **Claude-3.5**: 84.7% (+10.5% improvement needed)
+- 🥉 **GPT-4**: 84.5% (+10.8% improvement needed)  
+- 📊 **Gemini Pro**: 76.5% (+22.4% improvement needed)
 
-<details>
-<summary><strong>Level 2: Normal Calculation (4,090 samples)</strong></summary>
-
-| Problem Type | Count | Percentage |
-|--------------|-------|------------|
-| Number system conversions | 3,072 | 75% |
-| Two's-complement | 309 | 8% |
-| Sign/Magnitude Number | 312 | 8% |
-| One's-complement | 297 | 7% |
-| Binary Calculator | 100 | 2% |
-
-</details>
-
-<details>
-<summary><strong>Level 3: Karnaugh Maps (7,200 samples)</strong></summary>
-
-| K-map Type | Count | Percentage |
-|------------|-------|------------|
-| 3-variable kmap | 3,500 | 48.6% |
-| 4-variable kmap | 3,500 | 48.6% |
-| 5-variable kmap | 100 | 1.4% |
-| 6-variable kmap | 100 | 1.4% |
-
-</details>
+**Performance Improvement**: Our Package achieves **+10.5%** better overall performance than the best LLM (Claude-3.5: 84.7% vs Our Package: 93.6%)
 
 ## 5. Usage Guide
 
@@ -470,6 +491,8 @@ for i, result in enumerate(results):
 - Enable expansion, contribution, and reuse of data within the research community.
 
 ## 🔮 Future Development Roadmap
+
+### 🎯 Development Priorities
 
 #### 🤖 **AI Agent Transformation**
 Transform the current benchmark into an intelligent autonomous agent capable of end-to-end digital circuit design, optimization, and verification with natural language understanding.
