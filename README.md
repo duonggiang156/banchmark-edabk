@@ -1,4 +1,4 @@
-## 🎓 edabk-ic-design-dataset
+🎓 edabk-ic-design-dataset
 
 <div align="center">
   <img src="https://github.com/duonggiang156/benchmark-edabk/blob/master/images/logo_edabk.jpg" alt="EDA-BK Laboratory" width="300"/>
@@ -190,12 +190,22 @@ print(f"255 in binary: {binary_result}")
 ### 🏆 Key Performance Insights
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#2E8B57', 'primaryTextColor': '#FFFFFF', 'primaryBorderColor': '#1F5F3F', 'lineColor': '#34495E', 'secondaryColor': '#E74C3C', 'tertiaryColor': '#F39C12', 'background': '#F8F9FA', 'mainBkg': '#FFFFFF', 'cScale0': '#2E8B57', 'cScale1': '#3498DB', 'cScale2': '#E67E22', 'cScale3': '#E74C3C'}}}%%
-xychart-beta
-    title "Digital Circuit Design Benchmark Results"
-    x-axis ["Our Package (93.6%)", "Claude-3.5 (84.7%)", "GPT-4 (84.5%)", "Gemini Pro (76.5%)"]
-    y-axis "Accuracy (%)" 0 --> 100
-    bar [93.6, 84.7, 84.5, 76.5]
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ffffff', 'primaryTextColor': '#000000', 'primaryBorderColor': '#000000', 'lineColor': '#000000', 'background': '#ffffff', 'mainBkg': '#ffffff', 'textColor': '#000000'}}}%%
+flowchart LR
+    A["🥇 Our Package<br/>📊 93.6%<br/>⚡ 0.8s"] --> A1["Highest Accuracy"]
+    B["🥈 Claude-3.5<br/>📊 84.7%<br/>⚡ 1.9s"] --> B1["Strong Performance"]
+    C["🥉 GPT-4<br/>📊 84.5%<br/>⚡ 2.3s"] --> C1["Reliable Results"]
+    D["🏃 Gemini Pro<br/>📊 76.5%<br/>⚡ 1.7s"] --> D1["Good Baseline"]
+    
+    style A fill:#2ECC71,stroke:#27AE60,stroke-width:3px,color:#000000
+    style B fill:#3498DB,stroke:#2980B9,stroke-width:2px,color:#000000
+    style C fill:#E67E22,stroke:#D35400,stroke-width:2px,color:#000000
+    style D fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#000000
+    
+    style A1 fill:#D5F4E6,stroke:#27AE60,color:#000000
+    style B1 fill:#D6EAF8,stroke:#2980B9,color:#000000
+    style C1 fill:#F8E6D3,stroke:#D35400,color:#000000
+    style D1 fill:#F7D7DA,stroke:#C0392B,color:#000000
 ```
 
 **Performance Analysis:**
