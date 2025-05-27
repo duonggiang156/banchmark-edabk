@@ -111,7 +111,7 @@ xychart-beta
 
 <div align="center">
   
-[![Biểu đồ Sunburst](https://github.com/duonggiang156/benchmark-edabk/blob/master/images/data_collection.png)](https://chart-studio.plotly.com/~duonggiang156/5/)
+[![Biểu đồ Sunburst](https://github.com/duonggiang156/benchmark-edabk/blob/master/images/data_collection_vip.png)](https://chart-studio.plotly.com/~duonggiang156/5/)
 
 </div>
 
