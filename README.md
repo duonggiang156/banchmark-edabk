@@ -217,14 +217,10 @@ xychart-beta
 ## 4. Data Scale
 
 #### 📊 Digital Circuit Design Dataset Structure
-
 <div align="center">
-
 ### 🌟 **Sunburst Chart - 3 Concentric Rings**
-[![Biểu đồ Sunburst](https://github.com/duonggiang156/benchmark-edabk/blob/master/images/total_dataset.png)](https://chart-studio.plotly.com/~duonggiang156/5/)
-
+[![Biểu đồ Sunburst](images/data_collection.png)](https://chart-studio.plotly.com/~duonggiang156/5/)
 </div>
-
 **📊 Category Breakdown:**
 - 🔵 **Theory** (436): Theory Problems
 - 🟢 **Normal Calculation** (4,090): Number System Conversions (3,072), Two's-complement (309), Sign/Magnitude (312), One's-complement (297), Binary Calculator (100)  
