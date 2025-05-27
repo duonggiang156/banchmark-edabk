@@ -1,4 +1,4 @@
-🎓 edabk-ic-design-dataset
+## 🎓 edabk-id-design-dataset
 
 <div align="center">
   <img src="https://github.com/duonggiang156/benchmark-edabk/blob/master/images/logo_edabk.jpg" alt="EDA-BK Laboratory" width="300"/>
@@ -221,65 +221,14 @@ xychart-beta
 <div align="center">
 
 ### 🌟 **Sunburst Chart - 3 Concentric Rings**
+[![Biểu đồ Sunburst](https://github.com/duonggiang156/benchmark-edabk/blob/master/images/total_dataset.png)](https://chart-studio.plotly.com/~duonggiang156/5/)
 
-![Digital Circuit Dataset Structure](https://quickchart.io/chart?width=600&height=400&c=%7Btype%3A%27doughnut%27%2Cdata%3A%7Blabels%3A%5B%27Theory%20%28436%29%27%2C%27Number%20System%20%283072%29%27%2C%27Two%27s-complement%20%28309%29%27%2C%27Sign%2FMagnitude%20%28312%29%27%2C%27One%27s-complement%20%28297%29%27%2C%27Binary%20Calculator%20%28100%29%27%2C%273-variable%20K-map%20%283500%29%27%2C%274-variable%20K-map%20%283500%29%27%2C%275-variable%20%28100%29%27%2C%276-variable%20%28100%29%27%5D%2Cdatasets%3A%5B%7Bdata%3A%5B436%2C3072%2C309%2C312%2C297%2C100%2C3500%2C3500%2C100%2C100%5D%2CbackgroundColor%3A%5B%27%23E3F2FD%27%2C%27%234CAF50%27%2C%27%232196F3%27%2C%27%23FF9800%27%2C%27%239C27B0%27%2C%27%23E91E63%27%2C%27%23F44336%27%2C%27%23FF5722%27%2C%27%23795548%27%2C%27%23607D8B%27%5D%2CborderWidth%3A2%7D%5D%7D%2Coptions%3A%7Bresponsive%3Atrue%2Cplugins%3A%7Btitle%3A%7Bdisplay%3Atrue%2Ctext%3A%27Digital%20Circuit%20Design%20Dataset%20Structure%20%2811%2C726%29%27%7D%2Clegend%3A%7Bposition%3A%27bottom%27%7D%7D%7D%7D)
-
-**🎯 Multi-Layer Visualization:**
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#388E3C', 'lineColor': '#66BB6A', 'tertiaryColor': '#C8E6C9', 'background': '#F1F8E9', 'mainBkg': '#FFFFFF', 'cScale0': '#E3F2FD', 'cScale1': '#4CAF50', 'cScale2': '#FF9800'}}}%%
-pie title "Main Categories (11,726 total)"
-    "Function Simplify : 7,200" : 7200
-    "Normal Calculation : 4,090" : 4090  
-    "Theory : 436" : 436
-```
-
-**Normal Calculation Breakdown (4,090 samples):**
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#4CAF50', 'lineColor': '#81C784', 'tertiaryColor': '#C8E6C9', 'background': '#E8F5E8', 'mainBkg': '#FFFFFF'}}}%%
-pie title "Normal Calculation Types"
-    "Number System Conversions : 3,072" : 3072
-    "Two's-complement : 309" : 309
-    "Sign/Magnitude : 312" : 312
-    "One's-complement : 297" : 297
-    "Binary Calculator : 100" : 100
-```
-
-**Function Simplify Breakdown (7,200 samples):**
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#FF9800', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#FF9800', 'lineColor': '#FFB74D', 'tertiaryColor': '#FFE0B2', 'background': '#FFF3E0', 'mainBkg': '#FFFFFF'}}}%%
-pie title "Function Simplify Types"
-    "3-variable K-map : 3,500" : 3500
-    "4-variable K-map : 3,500" : 3500
-    "5-variable K-map : 100" : 100
-    "6-variable K-map : 100" : 100
-```
-
-**🎯 3-Layer Structure:**
-
-<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
-  <div style="text-align: center; margin: 0 30px;">
-    <div style="width: 80px; height: 80px; border-radius: 50%; background: #2C3E50; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 10px;">CENTER</div>
-    <small>Benchmark<br>(11,726)</small>
-  </div>
-  <div style="text-align: center; margin: 0 30px;">
-    <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(120deg, #E3F2FD 33%, #4CAF50 33%, #4CAF50 66%, #FF9800 66%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 10px;">RING 1</div>
-    <small>3 Categories</small>
-  </div>
-  <div style="text-align: center; margin: 0 30px;">
-    <div style="width: 160px; height: 160px; border-radius: 50%; background: conic-gradient(#E3F2FD 30deg, #4CAF50 30deg, #4CAF50 120deg, #2196F3 120deg, #FF9800 180deg, #9C27B0 240deg, #E91E63 270deg, #F44336 300deg, #FF5722 330deg, #795548 350deg, #607D8B 360deg); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 10px;">RING 2</div>
-    <small>10 Problem Types</small>
-  </div>
 </div>
 
 **📊 Category Breakdown:**
 - 🔵 **Theory** (436): Theory Problems
 - 🟢 **Normal Calculation** (4,090): Number System Conversions (3,072), Two's-complement (309), Sign/Magnitude (312), One's-complement (297), Binary Calculator (100)  
 - 🟠 **Function Simplify** (7,200): 3-variable K-map (3,500), 4-variable K-map (3,500), 5-variable K-map (100), 6-variable K-map (100)
-
-</div>
 
 **Dataset Hierarchy:**
 - **🎯 Center**: Benchmark Dataset (11,726 total samples)
