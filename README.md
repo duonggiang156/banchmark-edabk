@@ -69,8 +69,8 @@ pip install digitalcircuit
 }}%%
 xychart-beta
     title "Key Performance Insights"
-    y-axis ["Performance Summary", "Level 1", "Level 2", "Level 3"]
-    x-axis "Accuracy (%)" 0 --> 100
+    x-axis ["Performance Summary", "Level 1", "Level 2", "Level 3"]
+    y-axis "Accuracy (%)" 0 --> 100
     bar "Our Package" [93.6, 95.2, 92.8, 92.9]
     bar "Claude-3.5" [84.7, 86.1, 83.5, 84.2]
     bar "GPT-4" [84.5, 85.8, 83.2, 84.1]
