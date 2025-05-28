@@ -57,14 +57,16 @@ pip install digitalcircuit
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'primaryColor': '#4CAF50',  
-    'secondaryColor': '#2196F3', 
-    'tertiaryColor': '#FF9800', 
-    'quaternaryColor': '#9C27B0', 
+    'primaryColor': '#ffffff',
     'primaryTextColor': '#2c3e50',
     'primaryBorderColor': '#34495e',
     'lineColor': '#2c3e50',
-    'background': '#ffffff'
+    'background': '#ffffff',
+    'mainBkg': '#ffffff',
+    'cScale0': '#4CAF50',
+    'cScale1': '#2196F3', 
+    'cScale2': '#FF9800',
+    'cScale3': '#9C27B0'
   }
 }}%%
 xychart-beta
