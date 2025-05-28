@@ -53,86 +53,30 @@ pip install digitalcircuit
 
 ### 🏆 Key Performance Insights
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Key Performance Insights</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-  <canvas id="myChart" width="400" height="200"></canvas>
-  <script>
-    const ctx = document.getElementById('myChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ["Performance Summary", "Level 1", "Level 2", "Level 3"],
-        datasets: [
-          {
-            label: "Our Package",
-            data: [93.6, 95.2, 92.8, 92.9],
-            backgroundColor: "#4CAF50",
-            borderColor: "#388E3C",
-            borderWidth: 1
-          },
-          {
-            label: "Claude-3.5",
-            data: [84.7, 86.1, 83.5, 84.2],
-            backgroundColor: "#2196F3",
-            borderColor: "#1976D2",
-            borderWidth: 1
-          },
-          {
-            label: "GPT-4",
-            data: [84.5, 85.8, 83.2, 84.1],
-            backgroundColor: "#FF9800",
-            borderColor: "#F57C00",
-            borderWidth: 1
-          },
-          {
-            label: "Gemini Pro",
-            data: [76.5, 78.2, 75.1, 76.0],
-            backgroundColor: "#9C27B0",
-            borderColor: "#7B1FA2",
-            borderWidth: 1
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          title: {
-            display: true,
-            text: "Key Performance Insights",
-            font: { size: 16 }
-          },
-          legend: {
-            display: true,
-            position: "bottom"
-          }
-        },
-        scales: {
-          y: {
-            title: {
-              display: true,
-              text: "Accuracy (%)"
-            },
-            min: 0,
-            max: 100
-          },
-          x: {
-            title: {
-              display: true,
-              text: "Categories"
-            }
-          }
-        },
-        barPercentage: 0.8,
-        categoryPercentage: 0.8
-      }
-    });
-  </script>
-</body>
-</html>
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#4CAF50',  /* Our Package: Green */
+    'secondaryColor': '#2196F3', /* Claude-3.5: Blue */
+    'tertiaryColor': '#FF9800', /* GPT-4: Orange */
+    'quaternaryColor': '#9C27B0', /* Gemini Pro: Purple */
+    'primaryTextColor': '#2c3e50',
+    'primaryBorderColor': '#34495e',
+    'lineColor': '#2c3e50',
+    'background': '#ffffff'
+  }
+}}%%
+xychart-beta
+    title "Key Performance Insights"
+    x-axis ["Performance Summary", "Level 1", "Level 2", "Level 3"]
+    y-axis "Accuracy (%)" 0 --> 100
+    bar "Our Package" [93.6, 95.2, 92.8, 92.9]
+    bar "Claude-3.5" [84.7, 86.1, 83.5, 84.2]
+    bar "GPT-4" [84.5, 85.8, 83.2, 84.1]  
+    bar "Gemini Pro" [76.5, 78.2, 75.1, 76.0]
+```
+
 **🎨 Model Performance Legend:**
 - 🟢 **Our Package (DC)**: 93.6% overall - Leading digital circuit optimization with specialized algorithms
 - 🔵 **Claude-3.5**: 84.7% overall - Strong AI performance across all complexity levels  
