@@ -57,13 +57,19 @@ pip install digitalcircuit
 %%{init: {'theme':'default', 'themeVariables': { 'primaryColor': '#FFFFFF', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#34495E', 'lineColor': '#2C3E50', 'secondaryColor': '#2C3E50', 'tertiaryColor': '#2C3E50', 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', 'cScale0': '#27AE60', 'cScale1': '#3498DB', 'cScale2': '#E67E22', 'cScale3': '#E74C3C'}}}%%
 xychart-beta
     title "Digital Circuit Design Benchmark Results"
-    x-axis ["Performance Summary", "Level 1", "Level 2", "Level 3"]
+    x-axis [Performance Summary, Level 1, Level 2, Level 3]
     y-axis "Accuracy (%)" 0 --> 100
-    bar "Our Package (DC)" [93.6, 95.2, 92.8, 92.9]
-    bar "Claude-3.5" [84.7, 86.1, 83.5, 84.2]
-    bar "GPT-4" [84.5, 85.8, 83.2, 84.1]
-    bar "Gemini Pro" [76.5, 78.2, 75.1, 76.0]
+    bar [93.6, 95.2, 92.8, 92.9]
+    bar [84.7, 86.1, 83.5, 84.2]
+    bar [84.5, 85.8, 83.2, 84.1]
+    bar [76.5, 78.2, 75.1, 76.0]
 ```
+
+**🎨 Model Color Legend:**
+- 🟢 **Our Package (DC)**: #27AE60 (Emerald Green)
+- 🔵 **Claude-3.5**: #3498DB (Bright Blue)  
+- 🟠 **GPT-4**: #E67E22 (Vibrant Orange)
+- 🔴 **Gemini Pro**: #E74C3C (Coral Red)
 
 
 ## 🎯 Benchmark Goals
