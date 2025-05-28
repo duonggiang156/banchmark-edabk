@@ -54,22 +54,38 @@ pip install digitalcircuit
 ### 🏆 Key Performance Insights
 
 ```mermaid
-%%{init: {'theme':'default', 'themeVariables': { 'primaryColor': '#FFFFFF', 'primaryTextColor': '#2C3E50', 'primaryBorderColor': '#34495E', 'lineColor': '#2C3E50', 'secondaryColor': '#2C3E50', 'tertiaryColor': '#2C3E50', 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', 'cScale0': '#27AE60', 'cScale1': '#3498DB', 'cScale2': '#E67E22', 'cScale3': '#E74C3C'}}}%%
-xychart-beta
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#ffffff',
+    'primaryTextColor': '#2c3e50',
+    'primaryBorderColor': '#34495e',
+    'lineColor': '#2c3e50',
+    'secondaryColor': '#ecf0f1',
+    'tertiaryColor': '#bdc3c7',
+    'background': '#ffffff',
+    'mainBkg': '#ffffff',
+    'cScale0': '#27ae60',
+    'cScale1': '#3498db', 
+    'cScale2': '#e67e22',
+    'cScale3': '#e74c3c'
+  }
+}}%%
+xychart-beta horizontal
     title "Digital Circuit Design Benchmark Results"
-    x-axis [Performance Summary, Level 1, Level 2, Level 3]
+    x-axis [Performance_Summary, Level_1, Level_2, Level_3]
     y-axis "Accuracy (%)" 0 --> 100
     bar [93.6, 95.2, 92.8, 92.9]
-    bar [84.7, 86.1, 83.5, 84.2]
+    bar [84.7, 86.1, 83.5, 84.2] 
     bar [84.5, 85.8, 83.2, 84.1]
     bar [76.5, 78.2, 75.1, 76.0]
 ```
 
-**🎨 Model Color Legend:**
-- 🟢 **Our Package (DC)**: #27AE60 (Emerald Green)
-- 🔵 **Claude-3.5**: #3498DB (Bright Blue)  
-- 🟠 **GPT-4**: #E67E22 (Vibrant Orange)
-- 🔴 **Gemini Pro**: #E74C3C (Coral Red)
+**🎨 Model Legend:**
+- 🟢 **Our Package (DC)** - Emerald Green  
+- 🔵 **Claude-3.5** - Bright Blue
+- 🟠 **GPT-4** - Vibrant Orange
+- 🔴 **Gemini Pro** - Coral Red
 
 
 ## 🎯 Benchmark Goals
