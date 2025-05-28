@@ -77,11 +77,11 @@ xychart-beta
     bar "Gemini Pro" [76.5, 78.2, 75.1, 76.0]
 ```
 
-**🎨 Model Performance Legend:**
-- 🟢 **Our Package (DC)**: 93.6% overall - Leading digital circuit optimization with specialized algorithms
-- 🔵 **Claude-3.5**: 84.7% overall - Strong AI performance across all complexity levels  
-- 🟠 **GPT-4**: 84.5% overall - Competitive results with consistent accuracy
-- 🔴 **Gemini Pro**: 76.5% overall - Solid foundation with room for improvement
+**🎨 Color Legend:**
+- <span style="color: #4CAF50">■</span> **Our Package** - Green (#4CAF50)
+- <span style="color: #2196F3">■</span> **Claude-3.5** - Blue (#2196F3)  
+- <span style="color: #FF9800">■</span> **GPT-4** - Orange (#FF9800)
+- <span style="color: #9C27B0">■</span> **Gemini Pro** - Purple (#9C27B0)
 
 **📊 Performance Analysis:**
 - 🥇 **Our Package dominates** with +8.9% advantage over best LLM
@@ -158,7 +158,6 @@ export OPENAI_API_KEY="your_openai_api_key"
 export ANTHROPIC_API_KEY="your_anthropic_api_key" 
 export GOOGLE_API_KEY="your_google_api_key"
 ```
-
 #### Step 2: Load Dataset and Run Benchmark
 
 ```python
@@ -265,3 +264,4 @@ If you use this dataset for research, please cite as follows:
   url={https://github.com/<your-repo>}
 }
 ```
+
