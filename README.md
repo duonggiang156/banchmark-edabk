@@ -57,10 +57,10 @@ pip install digitalcircuit
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'primaryColor': '#4CAF50',  /* Our Package: Green */
-    'secondaryColor': '#2196F3', /* Claude-3.5: Blue */
-    'tertiaryColor': '#FF9800', /* GPT-4: Orange */
-    'quaternaryColor': '#9C27B0', /* Gemini Pro: Purple */
+    'primaryColor': '#4CAF50',  
+    'secondaryColor': '#2196F3', 
+    'tertiaryColor': '#FF9800', 
+    'quaternaryColor': '#9C27B0', 
     'primaryTextColor': '#2c3e50',
     'primaryBorderColor': '#34495e',
     'lineColor': '#2c3e50',
